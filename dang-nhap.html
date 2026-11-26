@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Đăng nhập hoặc đăng ký tài khoản thành viên Đồng Nai Xanh để lưu điểm đến, món ngon yêu thích và nhận gợi ý lịch trình cá nhân hóa.">
+  <title>Đăng nhập / Đăng ký | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER (không đưa Đăng nhập vào thanh menu chính) ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="index.html#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="index.html#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="index.html#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="dac-san.html#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="dac-san.html#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="nghe-thuat.html#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="nghe-thuat.html#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="ho-tro.html#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="index.html#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth active" id="headerAuthBtn" aria-current="page">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-wrapper">
+          <!-- Cột giới thiệu quyền lợi thành viên -->
+          <aside class="auth-showcase">
+            <span class="slide-tag">🌿 Thành viên Đồng Nai Xanh</span>
+            <h1>Đồng hành cùng bạn trên mọi cung đường Đồng Nai</h1>
+            <p>Tạo tài khoản miễn phí chỉ trong 30 giây để lưu trữ trọn vẹn sở thích, món ngon yêu thích và kế hoạch vi vu của riêng bạn.</p>
+
+            <ul class="auth-benefits">
+              <li>
+                <span class="benefit-icon" aria-hidden="true">❤️</span>
+                <div>
+                  <strong>Lưu đặc sản &amp; điểm đến yêu thích</strong>
+                  <span>Đồng bộ danh sách món ngon bạn đã thả tim để tra cứu mọi lúc.</span>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-icon" aria-hidden="true">🧭</span>
+                <div>
+                  <strong>Ghi nhớ kết quả trắc nghiệm Gợi ý</strong>
+                  <span>Xem lại ngay gợi ý điểm đến, ẩm thực và nghệ thuật hợp gu của bạn.</span>
+                </div>
+              </li>
+              <li>
+                <span class="benefit-icon" aria-hidden="true">🗺️</span>
+                <div>
+                  <strong>Nhận tư vấn lịch trình nhanh hơn</strong>
+                  <span>Tự động điền thông tin liên hệ khi đăng ký nhận lịch trình nhóm.</span>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Cột biểu mẫu Đăng nhập / Đăng ký / Hồ sơ -->
+          <div class="auth-card">
+            <!-- Khung khi CHƯA đăng nhập -->
+            <div id="authFormsWrap">
+              <div class="auth-tabs" role="tablist" aria-label="Chọn Đăng nhập hoặc Đăng ký">
+                <button type="button" class="auth-tab active" role="tab" id="tabLogin" aria-selected="true" aria-controls="panelLogin">Đăng nhập</button>
+                <button type="button" class="auth-tab" role="tab" id="tabRegister" aria-selected="false" aria-controls="panelRegister">Đăng ký tài khoản</button>
+              </div>
+
+              <!-- FORM ĐĂNG NHẬP -->
+              <form id="panelLogin" class="auth-form" role="tabpanel" aria-labelledby="tabLogin" novalidate>
+                <div class="auth-form-head">
+                  <h2>Chào mừng bạn quay lại!</h2>
+                  <p>Đăng nhập bằng email hoặc số điện thoại đã đăng ký.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="loginIdentifier">Email hoặc Số điện thoại <span class="req">*</span></label>
+                  <input type="text" id="loginIdentifier" name="identifier" placeholder="VD: ban@example.com hoặc 0912345678" autocomplete="username">
+                  <small class="error-msg" aria-live="polite"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="loginPassword">Mật khẩu <span class="req">*</span></label>
+                  <div class="pwd-wrap">
+                    <input type="password" id="loginPassword" name="password" placeholder="Nhập mật khẩu của bạn" autocomplete="current-password">
+                    <button type="button" class="pwd-toggle" aria-label="Hiện hoặc ẩn mật khẩu">👁️</button>
+                  </div>
+                  <small class="error-msg" aria-live="polite"></small>
+                </div>
+
+                <div class="auth-row-between">
+                  <label class="checkbox-line" for="rememberMe">
+                    <input type="checkbox" id="rememberMe" checked>
+                    <span>Ghi nhớ đăng nhập</span>
+                  </label>
+                  <button type="button" class="link-btn" id="forgotPwdBtn">Quên mật khẩu?</button>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-submit">Đăng nhập ngay</button>
+
+                <div class="auth-demo-box">
+                  <span>💡 Dùng thử nhanh: <code>demo@dongnaixanh.vn</code> / <code>123456</code></span>
+                  <button type="button" class="btn-fill-demo" id="fillDemoBtn">Điền mẫu</button>
+                </div>
+
+                <p class="auth-switch-note">
+                  Chưa có tài khoản? <button type="button" class="link-btn" id="goToRegister">Đăng ký ngay →</button>
+                </p>
+              </form>
+
+              <!-- FORM ĐĂNG KÝ -->
+              <form id="panelRegister" class="auth-form" role="tabpanel" aria-labelledby="tabRegister" hidden novalidate>
+                <div class="auth-form-head">
+                  <h2>Tạo tài khoản mới</h2>
+                  <p>Điền thông tin bên dưới để trở thành thành viên Đồng Nai Xanh.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="regName">Họ và tên <span class="req">*</span></label>
+                  <input type="text" id="regName" name="fullname" placeholder="Nguyễn Văn A" autocomplete="name">
+                  <small class="error-msg" aria-live="polite"></small>
+                </div>
+
+                <div class="auth-two-cols">
+                  <div class="form-group">
+                    <label for="regEmail">Email <span class="req">*</span></label>
+                    <input type="email" id="regEmail" name="email" placeholder="ban@example.com" autocomplete="email">
+                    <small class="error-msg" aria-live="polite"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="regPhone">Số điện thoại <span class="req">*</span></label>
+                    <input type="tel" id="regPhone" name="phone" placeholder="09xxxxxxxx" autocomplete="tel">
+                    <small class="error-msg" aria-live="polite"></small>
+                  </div>
+                </div>
+
+                <div class="auth-two-cols">
+                  <div class="form-group">
+                    <label for="regPassword">Mật khẩu <span class="req">*</span></label>
+                    <div class="pwd-wrap">
+                      <input type="password" id="regPassword" name="password" placeholder="Tối thiểu 6 ký tự" autocomplete="new-password">
+                      <button type="button" class="pwd-toggle" aria-label="Hiện hoặc ẩn mật khẩu">👁️</button>
+                    </div>
+                    <small class="error-msg" aria-live="polite"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="regConfirm">Nhập lại mật khẩu <span class="req">*</span></label>
+                    <div class="pwd-wrap">
+                      <input type="password" id="regConfirm" name="confirm" placeholder="Nhập lại mật khẩu" autocomplete="new-password">
+                      <button type="button" class="pwd-toggle" aria-label="Hiện hoặc ẩn mật khẩu">👁️</button>
+                    </div>
+                    <small class="error-msg" aria-live="polite"></small>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-line" for="regAgree">
+                    <input type="checkbox" id="regAgree" name="agree">
+                    <span>Tôi đồng ý với điều khoản sử dụng và chính sách bảo mật của Đồng Nai Xanh.</span>
+                  </label>
+                  <small class="error-msg" aria-live="polite"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-submit">Đăng ký tài khoản</button>
+
+                <p class="auth-switch-note">
+                  Đã có tài khoản? <button type="button" class="link-btn" id="goToLogin">← Quay lại đăng nhập</button>
+                </p>
+              </form>
+            </div>
+
+            <!-- Khung Hồ sơ khi ĐÃ đăng nhập -->
+            <div id="profileWrap" class="profile-box" hidden>
+              <div class="profile-header">
+                <div class="profile-avatar" id="profileAvatar">Đ</div>
+                <div>
+                  <span class="pill">Thành viên đang hoạt động</span>
+                  <h2 id="profileName">Nguyễn Văn A</h2>
+                  <p id="profileMeta">ban@example.com · 0900000000</p>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <a href="dac-san.html" class="profile-stat-card">
+                  <strong id="profileFavCount">0</strong>
+                  <span>Món đặc sản đã yêu thích ❤️</span>
+                </a>
+                <a href="goi-y.html" class="profile-stat-card">
+                  <strong id="profileQuizStatus">Chưa làm</strong>
+                  <span>Trắc nghiệm Gợi ý 10 câu 🧭</span>
+                </a>
+              </div>
+
+              <div class="profile-actions">
+                <a href="index.html" class="btn btn-primary">🏞️ Về trang chủ khám phá</a>
+                <a href="goi-y.html" class="btn btn-outline">✨ Xem gợi ý của tôi</a>
+                <button type="button" class="btn btn-logout" id="logoutBtn">Đăng xuất</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch, ẩm thực và văn hóa nghệ thuật Đồng Nai – vùng đất xanh mát, hiền hòa ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế &amp; Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

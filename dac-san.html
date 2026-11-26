@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="16 đặc sản Đồng Nai nổi tiếng: gỏi cá Biên Hòa, xôi chiên phồng, lẩu tôm, cơm gà cá mặn, bưởi Tân Triều, chôm chôm Long Khánh... kèm địa điểm và giá tham khảo.">
+  <title>Đặc sản Đồng Nai | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-media {
+      position: relative;
+      overflow: hidden;
+    }
+    .card-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.35s ease;
+    }
+    .card:hover .card-media img {
+      transform: scale(1.05);
+    }
+    .card-media .badge {
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="index.html#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="index.html#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="index.html#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html" aria-current="page"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="nghe-thuat.html#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="nghe-thuat.html#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="ho-tro.html#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="index.html#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth" id="headerAuthBtn">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" style="background-image: url('images/hero-dacsan.jpg'), linear-gradient(135deg, #7c2d12, #d97706);">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ</a><span>/</span><span>Đặc sản Đồng Nai</span>
+        </nav>
+        <h1>Đặc sản Đồng Nai – Hương vị miền Đông khó quên</h1>
+        <p>Từ gỏi cá Biên Hòa chua cay, xôi chiên phồng giòn rụm đến bưởi Tân Triều, chôm chôm Long Khánh – 16 món ngon và quà mang về bạn nhất định phải thử.</p>
+        <a href="#mon-ngon" class="btn btn-accent">Khám phá món ngon ↓</a>
+      </div>
+    </section>
+
+    <!-- ===== THỐNG KÊ ===== -->
+    <section class="stats" aria-label="Con số nổi bật">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-number" data-count="16">0</span><span class="stat-label">Đặc sản tiêu biểu</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="10">0</span><span class="stat-label">Món ăn tại chỗ</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="6">0</span><span class="stat-label">Trái cây & quà mang về</span></div>
+        <div class="stat reveal"><span class="stat-number" id="favStat">0</span><span class="stat-label">Món bạn đã yêu thích ❤️</span></div>
+      </div>
+    </section>
+
+    <!-- ===== DANH SÁCH ĐẶC SẢN ===== -->
+    <section class="section" id="mon-ngon">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Ẩm thực</span>
+          <h2>16 đặc sản Đồng Nai nên thử & nên mua</h2>
+          <p>Tìm món, lọc theo nhóm, sắp xếp theo giá và bấm ❤️ để lưu món yêu thích (được ghi nhớ cho lần truy cập sau).</p>
+        </header>
+
+        <div class="toolbar reveal">
+          <div class="search-box">
+            <label for="searchInput" class="skip-link">Tìm kiếm đặc sản</label>
+            <input type="search" id="searchInput" placeholder="Tìm: lẩu, bưởi, Long Khánh..." autocomplete="off">
+          </div>
+          <div class="chips" role="group" aria-label="Lọc theo nhóm">
+            <button class="chip active" type="button" data-filter="all">Tất cả</button>
+            <button class="chip" type="button" data-filter="mon-an">🍲 Món ăn</button>
+            <button class="chip" type="button" data-filter="qua">🎁 Trái cây & quà</button>
+          </div>
+          <div class="toolbar-extra">
+            <label class="skip-link" for="sortSelect">Sắp xếp</label>
+            <select id="sortSelect">
+              <option value="default">Sắp xếp: Mặc định</option>
+              <option value="asc">Giá: Thấp → Cao</option>
+              <option value="desc">Giá: Cao → Thấp</option>
+              <option value="name">Tên: A → Z</option>
+            </select>
+            <label class="fav-filter"><input type="checkbox" id="favOnly"> Chỉ món yêu thích (<span id="favCount">0</span>)</label>
+          </div>
+        </div>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+
+        <div class="card-grid" id="cardGrid">
+          <!-- 1 -->
+          <article class="card reveal" data-category="mon-an" data-id="goi-ca" data-price="80000">
+            <div class="card-media" style="--g1:#0f766e; --g2:#84cc16;">
+              <img src="images/goi-ca.jpg" alt="Gỏi cá Biên Hòa" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🐟</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Gỏi cá Biên Hòa</h3>
+              </div>
+              <p class="card-desc">Đặc sản nổi tiếng nhất vùng đất này, chế biến từ cá trắm đen tươi thái lát mỏng, trộn dừa nạo, hành tím, ớt, lạc rang và nước mắm pha chua ngọt đậm đà.</p>
+              <div class="card-more" hidden>
+                <p>Món gỏi có vị chua cay đặc trưng, thịt cá ngọt tươi kết hợp hoàn hảo với các gia vị tạo nên hương vị khó quên.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Gỏi Cá Tân Mai Kim Yến (Huỳnh Văn Hớn, Biên Hòa)</li>
+                  <li>Gỏi Cá Tân Mai (đường Võ Thị Sáu)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">80.000 – 150.000đ/dĩa</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card reveal" data-category="mon-an" data-id="lau-tom" data-price="200000">
+            <div class="card-media" style="--g1:#c2410c; --g2:#fb923c;">
+              <img src="images/lau-tom.jpg" alt="Lẩu tôm Biên Hòa" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🦐</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Lẩu tôm Biên Hòa</h3>
+              </div>
+              <p class="card-desc">Nước dùng nấu từ xương heo, tôm khô và cá khô cho vị ngọt thanh tự nhiên; tôm tươi to béo ăn kèm rau muống, bông so đũa, bắp chuối non và bánh tráng nướng.</p>
+              <div class="card-more" hidden>
+                <p>Món lẩu mang hương vị đậm đà, phù hợp cho bữa ăn gia đình ấm cúng.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Lẩu Tôm 5 Ri (Biên Hòa)</li>
+                  <li>Quán Lẩu Tôm Bà Sáu (đường Phan Chu Trinh)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">200.000 – 350.000đ/nồi</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="card reveal" data-category="mon-an" data-id="com-ga-ca-man" data-price="120000">
+            <div class="card-media" style="--g1:#a16207; --g2:#fde047;">
+              <img src="images/com-ga-ca-man.jpg" alt="Cơm gà cá mặn Long Khánh" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🍗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Cơm gà cá mặn Long Khánh</h3>
+              </div>
+              <p class="card-desc">Món ăn độc đáo kết hợp thịt gà luộc hoặc nướng thơm phức với cá mặn (cá trắm) kho, nướng hoặc nấu canh chua trong cùng một bữa cơm.</p>
+              <div class="card-more" hidden>
+                <p>Sự kết hợp tạo nên hương vị cân bằng giữa vị ngọt của thịt gà và vị đậm đà của cá mặn.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Các quán ăn ở chợ địa phương</li>
+                  <li>Nhà hàng Đặc Sản Long Khánh (đường Hùng Vương)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">120.000 – 200.000đ/suất</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card reveal" data-category="mon-an" data-id="lau-kho-qua" data-price="180000">
+            <div class="card-media" style="--g1:#166534; --g2:#86efac;">
+              <img src="images/lau-kho-qua.jpg" alt="Lẩu khổ qua rừng" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🥒</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Lẩu khổ qua rừng</h3>
+              </div>
+              <p class="card-desc">Khổ qua rừng vị đắng nhẹ đặc trưng, nấu cùng nước dùng xương heo và tôm khô – thanh nhiệt, giải độc, ăn kèm thịt heo, tôm tươi và rau rừng.</p>
+              <div class="card-more" hidden>
+                <p>Món lẩu mang hương vị thanh mát, bổ dưỡng đặc trưng Đồng Nai.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Lẩu khổ qua Dầu Giây (Thống Nhất, Đồng Nai)</li>
+                  <li>Lẩu Khổ Qua Bảo Toàn (Thống Nhất, Đồng Nai)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">180.000 – 300.000đ/nồi</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="card reveal" data-category="mon-an" data-id="cha-lui" data-price="15000">
+            <div class="card-media" style="--g1:#9a3412; --g2:#f97316;">
+              <img src="images/cha-lui.jpg" alt="Chả lụi Biên Hòa" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🍢</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Chả lụi Biên Hòa</h3>
+              </div>
+              <p class="card-desc">Thịt heo xay nhuyễn trộn gia vị, nướng trên than hoa đến khi vàng đồng; ăn kèm bánh tráng nướng, rau sống và nước chấm chua ngọt.</p>
+              <div class="card-more" hidden>
+                <p>Chả lụi có vị thơm ngọt, là món ăn vặt được rất nhiều người yêu thích.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Chợ đêm Biên Hòa</li>
+                  <li>Chả Lụi Năm Căn (đường Võ Văn Kiệt)</li>
+                  <li>Chả Lụi LaGi & Nem Nướng Mẹt Phố (Biên Hòa)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">15.000 – 25.000đ/xiên</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="card reveal" data-category="mon-an" data-id="goi-buoi" data-price="60000">
+            <div class="card-media" style="--g1:#be185d; --g2:#fda4af;">
+              <img src="images/goi-buoi.jpg" alt="Gỏi bưởi Tân Triều" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🥗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Gỏi bưởi Tân Triều</h3>
+              </div>
+              <p class="card-desc">Bưởi Tân Triều múi to, ngọt thanh, ít hạt trộn cùng tôm khô, thịt heo luộc thái sợi, rau răm, húng lủi và đậu phộng rang.</p>
+              <div class="card-more" hidden>
+                <p>Nước trộn gỏi pha từ nước mắm, đường, chanh và ớt tạo nên vị chua ngọt hài hòa.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Vườn Bưởi Tân Triều (xã Tân Triều)</li>
+                  <li>Chợ Tân Phú</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">60.000 – 100.000đ/dĩa</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="card reveal" data-category="mon-an" data-id="banh-gai" data-price="10000">
+            <div class="card-media" style="--g1:#1f2937; --g2:#4d7c0f;">
+              <img src="images/banh-gai.jpg" alt="Bánh gai Hố Nai" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🍙</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Bánh gai Hố Nai</h3>
+              </div>
+              <p class="card-desc">Đặc sản truyền thống màu xanh đen từ lá gai; vỏ dẻo mềm, nhân đậu xanh hoặc thịt mỡ ngọt béo, gói trong lá chuối thơm đặc biệt.</p>
+              <div class="card-more" hidden>
+                <p>Bánh thường được làm trong các dịp lễ Tết, thể hiện sự khéo léo trong chế biến của người dân Hố Nai.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Lò Bánh Gai Truyền Thống Hố Nai (phường Hố Nai)</li>
+                  <li>Chợ Hố Nai</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">10.000 – 18.000đ/cái</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="card reveal" data-category="mon-an" data-id="de-com" data-price="80000">
+            <div class="card-media" style="--g1:#78350f; --g2:#d97706;">
+              <img src="images/de-com.jpg" alt="Dế cơm chiên nước mắm" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🦗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Dế cơm chiên nước mắm</h3>
+              </div>
+              <p class="card-desc">Món ăn độc đáo của vùng nông thôn Đồng Nai: dế cơm làm sạch, tẩm gia vị rồi chiên giòn, béo ngậy và thơm nồng.</p>
+              <div class="card-more" hidden>
+                <p>Món ăn giàu protein, thường được dùng làm món nhậu hoặc ăn vặt, mang hương vị dân dã đặc trưng.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Chợ Định Quán</li>
+                  <li>Các quán ăn địa phương</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">80.000 – 120.000đ/dĩa</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="card reveal" data-category="mon-an" data-id="thit-dong" data-price="150000">
+            <div class="card-media" style="--g1:#854d0e; --g2:#facc15;">
+              <img src="images/thit-dong.jpg" alt="Thịt dông cát" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🔥</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Thịt dông cát</h3>
+              </div>
+              <p class="card-desc">Món ăn truyền thống của vùng nông thôn, thịt có vị ngọt tự nhiên, thường được nướng than hoa hoặc làm cà ri.</p>
+              <div class="card-more" hidden>
+                <p>Món ăn có giá trị dinh dưỡng cao và được coi là đặc sản độc đáo của vùng đất Đồng Nai.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Quán Thịt Dông Cát (huyện Nhơn Trạch)</li>
+                  <li>Hàng Thịt Dông Nướng (chợ Vĩnh An)</li>
+                  <li>Nhà hàng Đặc Sản Miền Quê (huyện Tân Phú)</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">150.000 – 250.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="card reveal" data-category="qua" data-id="trai-uoi" data-price="50000">
+            <div class="card-media" style="--g1:#57534e; --g2:#a8a29e;">
+              <img src="images/trai-uoi.jpg" alt="Trái ươi rừng" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🌰</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Trái ươi rừng</h3>
+              </div>
+              <p class="card-desc">Vị chua thanh đặc trưng, thường ăn tươi hoặc chế biến thành mứt, kẹo; giàu vitamin C, có tác dụng thanh nhiệt giải độc.</p>
+              <div class="card-more" hidden>
+                <p>Ươi rừng có kích thước nhỏ hơn ươi trồng nhưng hương vị đậm đà hơn, là đặc sản quý hiếm của rừng núi Đồng Nai.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">50.000 – 150.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="card reveal" data-category="qua" data-id="mit-to-nu" data-price="80000">
+            <div class="card-media" style="--g1:#65a30d; --g2:#facc15;">
+              <img src="images/mit-to-nu.jpg" alt="Mít tố nữ Long Khánh" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🍈</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Mít tố nữ Long Khánh</h3>
+              </div>
+              <p class="card-desc">Giống mít đặc sản với múi nhỏ, vàng đậm, thịt dày, ngọt thanh; không hạt hoặc hạt rất nhỏ, thịt mít dẻo mềm, thơm ngon tự nhiên.</p>
+              <div class="card-more" hidden>
+                <p>Đây là loại mít cao cấp được ưa chuộng và là món quà ý nghĩa từ Đồng Nai.</p>
+                <p><em>Giá có thể thay đổi tùy thời điểm, tình hình mùa vụ thu hoạch.</em></p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">80.000 – 150.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="card reveal" data-category="qua" data-id="chom-chom" data-price="40000">
+            <div class="card-media" style="--g1:#b91c1c; --g2:#fb7185;">
+              <img src="images/chom-chom.jpg" alt="Chôm chôm Long Khánh" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🍒</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Chôm chôm Long Khánh</h3>
+              </div>
+              <p class="card-desc">Vỏ đỏ tươi, thịt trắng trong, ngọt thanh và thơm mát; ít chua, múi to và ít hạt.</p>
+              <div class="card-more" hidden>
+                <p>Chôm chôm Long Khánh được trồng trên đất đỏ bazan nên có chất lượng vượt trội, là đặc sản nổi tiếng của vùng đất này.</p>
+                <p><em>Giá có thể thay đổi tùy thời điểm, tình hình mùa vụ thu hoạch.</em></p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">40.000 – 100.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13 -->
+          <article class="card reveal" data-category="qua" data-id="buoi-tan-trieu" data-price="60000">
+            <div class="card-media" style="--g1:#4d7c0f; --g2:#bef264;">
+              <img src="images/buoi-tan-trieu.jpg" alt="Bưởi Tân Triều" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🍐</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Bưởi Tân Triều</h3>
+              </div>
+              <p class="card-desc">Múi to, ngọt thanh, ít hạt và vỏ mỏng; múi màu hồng nhạt đẹp mắt, vị ngọt đậm đà với chút chua nhẹ tạo nên hương vị cân bằng.</p>
+              <div class="card-more" hidden>
+                <p>Bưởi Tân Triều được trồng trên vùng đất phù sa màu mỡ, tạo nên chất lượng đặc biệt.</p>
+                <p><em>Giá có thể thay đổi tùy thời điểm, tình hình mùa vụ thu hoạch.</em></p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">60.000 – 120.000đ/trái</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14 -->
+          <article class="card reveal" data-category="qua" data-id="nam-moi" data-price="200000">
+            <div class="card-media" style="--g1:#44403c; --g2:#d6d3d1;">
+              <img src="images/nam-moi.jpg" alt="Nấm mối Đồng Nai" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🍄</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Nấm mối Đồng Nai</h3>
+              </div>
+              <p class="card-desc">Mọc tự nhiên trên các gò mối đất, vị ngọt thanh đặc trưng, giá trị dinh dưỡng cao – đặc sản quý hiếm được săn đón.</p>
+              <div class="card-more" hidden>
+                <p>Nấm có thể chế biến thành nhiều món ngon như nấm xào, nấm nướng hoặc làm nấm khô để bảo quản lâu dài.</p>
+                <h4>💰 Giá tham khảo</h4>
+                <ul class="list">
+                  <li>Nấm mối tươi: 200.000 – 400.000đ/kg</li>
+                  <li>Nấm mối khô: 800.000 – 1.200.000đ/kg</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Từ 200.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15 -->
+          <article class="card reveal" data-category="qua" data-id="ca-kim-kho" data-price="150000">
+            <div class="card-media" style="--g1:#1e3a8a; --g2:#60a5fa;">
+              <img src="images/ca-kim-kho.jpg" alt="Cá kìm khô" loading="lazy" onerror="this.remove()">
+              <span class="badge">Trái cây & quà</span>
+              <span class="card-emoji" aria-hidden="true">🐠</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Cá kìm khô</h3>
+              </div>
+              <p class="card-desc">Cá kìm tươi đánh bắt từ sông Đồng Nai, phơi khô tự nhiên dưới nắng; thịt chắc, ngọt thanh, giữ nguyên hương vị cá sông.</p>
+              <div class="card-more" hidden>
+                <p>Thường được dùng để nấu canh chua, kho hoặc nướng – là nguyên liệu quan trọng trong ẩm thực địa phương.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">150.000 – 600.000đ/kg</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16 -->
+          <article class="card reveal" data-category="mon-an" data-id="xoi-chien-phong" data-price="60000">
+            <div class="card-media" style="--g1:#b45309; --g2:#fde047;">
+              <img src="images/xoi-chien-phong.jpg" alt="Xôi chiên phồng Biên Hòa" loading="lazy" onerror="this.remove()">
+              <span class="badge">Món ăn</span>
+              <span class="card-emoji" aria-hidden="true">🥟</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <button class="fav-btn" type="button" aria-label="Yêu thích" aria-pressed="false" title="Lưu món yêu thích"><svg class="heart-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+                <h3 class="card-title">Xôi chiên phồng Biên Hòa</h3>
+              </div>
+              <p class="card-desc">Đặc sản trứ danh của Đồng Nai đạt Kỷ lục Châu Á: nếp dẻo giã nhuyễn cùng đậu xanh và đường, chiên phồng tròn vàng ươm giòn rụm.</p>
+              <div class="card-more" hidden>
+                <p>Lớp vỏ ngoài vàng giòn bắt mắt, bên trong dẻo mềm thơm bùi đậu xanh; thường thưởng thức nóng kèm gà quay, gà nướng và tương ớt.</p>
+                <h4>📍 Địa điểm thưởng thức</h4>
+                <ul class="list">
+                  <li>Nhà hàng Cây Dừa (TP. Biên Hòa)</li>
+                  <li>Các quán ăn gia đình ven sông Đồng Nai & Bửu Long</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">60.000 – 100.000đ/phần</span>
+                <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <span aria-hidden="true">🍽️</span>
+          Không tìm thấy món phù hợp. Hãy thử từ khóa hoặc bộ lọc khác nhé!
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BẢNG GIÁ ===== -->
+    <section class="section section-alt" id="bang-gia">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Tra cứu nhanh</span>
+          <h2>Bảng giá tham khảo đặc sản Đồng Nai</h2>
+          <p>Tổng hợp mức giá và gợi ý nơi thưởng thức để bạn dễ lên kế hoạch chi tiêu.</p>
+        </header>
+
+        <div class="table-wrap reveal">
+          <table class="price-table">
+            <caption>* Giá chỉ mang tính tham khảo, có thể thay đổi theo thời điểm và mùa vụ.</caption>
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Đặc sản</th>
+                <th scope="col">Nhóm</th>
+                <th scope="col">Giá tham khảo</th>
+                <th scope="col">Gợi ý nơi thưởng thức / mua</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Gỏi cá Biên Hòa</td><td><span class="pill">Món ăn</span></td><td>80.000 – 150.000đ/dĩa</td><td>Gỏi Cá Tân Mai Kim Yến</td></tr>
+              <tr><td>2</td><td>Lẩu tôm Biên Hòa</td><td><span class="pill">Món ăn</span></td><td>200.000 – 350.000đ/nồi</td><td>Lẩu Tôm 5 Ri</td></tr>
+              <tr><td>3</td><td>Cơm gà cá mặn</td><td><span class="pill">Món ăn</span></td><td>120.000 – 200.000đ/suất</td><td>Nhà hàng Đặc Sản Long Khánh</td></tr>
+              <tr><td>4</td><td>Lẩu khổ qua rừng</td><td><span class="pill">Món ăn</span></td><td>180.000 – 300.000đ/nồi</td><td>Lẩu khổ qua Dầu Giây</td></tr>
+              <tr><td>5</td><td>Chả lụi Biên Hòa</td><td><span class="pill">Món ăn</span></td><td>15.000 – 25.000đ/xiên</td><td>Chợ đêm Biên Hòa</td></tr>
+              <tr><td>6</td><td>Gỏi bưởi Tân Triều</td><td><span class="pill">Món ăn</span></td><td>60.000 – 100.000đ/dĩa</td><td>Vườn Bưởi Tân Triều</td></tr>
+              <tr><td>7</td><td>Bánh gai Hố Nai</td><td><span class="pill">Món ăn</span></td><td>10.000 – 18.000đ/cái</td><td>Chợ Hố Nai</td></tr>
+              <tr><td>8</td><td>Dế cơm chiên nước mắm</td><td><span class="pill">Món ăn</span></td><td>80.000 – 120.000đ/dĩa</td><td>Chợ Định Quán</td></tr>
+              <tr><td>9</td><td>Thịt dông cát</td><td><span class="pill">Món ăn</span></td><td>150.000 – 250.000đ/kg</td><td>Quán Thịt Dông Cát (Nhơn Trạch)</td></tr>
+              <tr><td>10</td><td>Trái ươi rừng</td><td><span class="pill gift">Quà</span></td><td>50.000 – 150.000đ/kg</td><td>Chợ địa phương</td></tr>
+              <tr><td>11</td><td>Mít tố nữ Long Khánh</td><td><span class="pill gift">Quà</span></td><td>80.000 – 150.000đ/kg</td><td>Vườn Long Khánh</td></tr>
+              <tr><td>12</td><td>Chôm chôm Long Khánh</td><td><span class="pill gift">Quà</span></td><td>40.000 – 100.000đ/kg</td><td>Vườn Long Khánh</td></tr>
+              <tr><td>13</td><td>Bưởi Tân Triều</td><td><span class="pill gift">Quà</span></td><td>60.000 – 120.000đ/trái</td><td>Làng bưởi Tân Triều</td></tr>
+              <tr><td>14</td><td>Nấm mối (tươi / khô)</td><td><span class="pill gift">Quà</span></td><td>200.000 – 400.000đ / 800.000 – 1.200.000đ/kg</td><td>Chợ địa phương</td></tr>
+              <tr><td>15</td><td>Cá kìm khô</td><td><span class="pill gift">Quà</span></td><td>150.000 – 600.000đ/kg</td><td>Chợ địa phương</td></tr>
+              <tr><td>16</td><td>Xôi chiên phồng Biên Hòa</td><td><span class="pill">Món ăn</span></td><td>60.000 – 100.000đ/phần</td><td>Nhà hàng Cây Dừa (Biên Hòa)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA về trang du lịch ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner green reveal">
+          <div>
+            <h2>Ăn no rồi, đi chơi đâu?</h2>
+            <p>Hồ Trị An, rừng Mã Đà, Bửu Long, đảo Ó… 12 điểm đến đang chờ bạn.</p>
+          </div>
+          <a href="index.html#diem-den" class="btn btn-accent">Xem điểm du lịch →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch và ẩm thực Đồng Nai – vùng đất xanh mát, hiền hòa ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="index.html#kinh-nghiem">Kinh nghiệm</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="goi-y.html#trac-nghiem">Trắc nghiệm sở thích</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế & Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL CHI TIẾT ===== -->
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" aria-label="Đóng">×</button>
+      <div class="card-media modal-media"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <ul class="card-meta" id="modalMeta"></ul>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

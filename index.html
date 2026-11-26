@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá 12 địa điểm du lịch hấp dẫn nhất Đồng Nai: The Amazing Bay, hồ Trị An, rừng Mã Đà, Bửu Long, núi Chứa Chan, đảo Ó...">
+  <title>Du lịch Đồng Nai | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-media {
+      position: relative;
+      overflow: hidden;
+    }
+    .card-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .card:hover .card-media img {
+      transform: scale(1.05);
+    }
+    .card-media .badge,
+    .card-media .card-number {
+      position: relative;
+      z-index: 2;
+    }
+    .modal-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html" aria-current="page"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="dac-san.html#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="dac-san.html#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="nghe-thuat.html#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="nghe-thuat.html#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="ho-tro.html#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth" id="headerAuthBtn">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="slider" id="heroSlider" aria-label="Ảnh nổi bật Đồng Nai">
+      <div class="slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/ho-tri-an.jpg');">
+        <div class="container slide-content">
+          <span class="slide-tag">🏞️ Viên ngọc xanh của Đồng Nai</span>
+          <h1>Khám phá Đồng Nai – Xanh mát ngay cạnh Sài Gòn</h1>
+          <p>Từ hồ Trị An lộng gió, rừng Mã Đà nguyên sinh đến những khu vui chơi sôi động – tất cả chỉ cách TP.HCM 30 – 130 km.</p>
+          <div class="slide-actions">
+            <a href="#diem-den" class="btn btn-accent">Khám phá ngay</a>
+            <a href="goi-y.html" class="btn btn-ghost">🧭 Trắc nghiệm gợi ý</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/buu-long.jpg');">
+        <div class="container slide-content">
+          <span class="slide-tag">🛕 Khu du lịch Bửu Long</span>
+          <h2>“Vịnh Hạ Long thu nhỏ” giữa lòng Biên Hòa</h2>
+          <p>Long Sơn Thạch Động, núi Bình Điện, Bửu Phong Cổ Tự và làn nước trong xanh soi bóng vách đá.</p>
+          <div class="slide-actions">
+            <a href="#diem-den" class="btn btn-accent">Xem điểm đến</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/amazing-bay.jpg');">
+        <div class="container slide-content">
+          <span class="slide-tag">🌊 The Amazing Bay</span>
+          <h2>Biển nhân tạo lớn nhất Việt Nam</h2>
+          <p>Dòng sông lười dài nhất Đông Nam Á, máng trượt cao hơn 20 m – điểm hẹn mùa hè cho cả gia đình.</p>
+          <div class="slide-actions">
+            <a href="#lien-he" class="btn btn-accent">Nhận tư vấn</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn prev" type="button" aria-label="Ảnh trước">‹</button>
+      <button class="slider-btn next" type="button" aria-label="Ảnh tiếp theo">›</button>
+      <div class="slider-dots" role="tablist" aria-label="Chọn ảnh"></div>
+    </section>
+
+    <!-- ===== THỐNG KÊ ===== -->
+    <section class="stats" aria-label="Con số nổi bật">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-number" data-count="12">0</span><span class="stat-label">Điểm đến nổi bật</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="30" data-suffix=" km">0</span><span class="stat-label">Cách TP.HCM chỉ từ</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="25" data-suffix=" ha">0</span><span class="stat-label">Diện tích The Amazing Bay</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="1988">0</span><span class="stat-label">Đá Ba Chồng thành di tích QG</span></div>
+      </div>
+    </section>
+
+    <!-- ===== ĐIỂM ĐẾN ===== -->
+    <section class="section" id="diem-den">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Điểm đến</span>
+          <h2>12 địa điểm du lịch Đồng Nai không thể bỏ lỡ</h2>
+          <p>Tìm kiếm theo tên hoặc lọc theo loại hình để chọn nơi phù hợp cho chuyến đi trong ngày hay cuối tuần của bạn.</p>
+        </header>
+
+        <div class="toolbar reveal">
+          <div class="search-box">
+            <label for="searchInput" class="skip-link">Tìm kiếm điểm đến</label>
+            <input type="search" id="searchInput" placeholder="Tìm: hồ, thác, cắm trại, Biên Hòa..." autocomplete="off">
+          </div>
+          <div class="chips" role="group" aria-label="Lọc theo loại hình">
+            <button class="chip active" type="button" data-filter="all">Tất cả</button>
+            <button class="chip" type="button" data-filter="vui-choi">🎢 Vui chơi</button>
+            <button class="chip" type="button" data-filter="thien-nhien">🌳 Thiên nhiên</button>
+            <button class="chip" type="button" data-filter="van-hoa">🛕 Văn hóa – Lịch sử</button>
+            <button class="chip" type="button" data-filter="miet-vuon">🍈 Miệt vườn</button>
+          </div>
+        </div>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+
+        <div class="card-grid" id="cardGrid">
+          <!-- 1 -->
+          <article class="card reveal" data-category="vui-choi" data-id="amazing-bay">
+            <div class="card-media" style="--g1:#0369a1; --g2:#22d3ee;">
+              <img src="images/amazing-bay.jpg" alt="Công viên nước The Amazing Bay – Vịnh Kỳ Diệu" loading="lazy">
+              <span class="badge">Vui chơi</span>
+              <span class="card-number">01</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Công viên nước The Amazing Bay – Vịnh Kỳ Diệu</h3>
+              <ul class="card-meta">
+                <li>📍 22 Võ Thị Sáu, P. Long Tân, Biên Hòa</li>
+                <li>🚗 Cách TP.HCM khoảng 30 km</li>
+              </ul>
+              <p class="card-desc">Tổ hợp vui chơi giải trí dưới nước quy mô lớn, được mệnh danh là “vịnh biển giữa lòng thành phố”, sở hữu diện tích hơn 25 ha với hàng loạt công trình hiện đại và hệ thống trò chơi đẳng cấp quốc tế.</p>
+              <div class="card-more" hidden>
+                <p>Nơi đây nổi bật với những kỷ lục ấn tượng như: <strong>biển nhân tạo lớn nhất Việt Nam</strong>, <strong>dòng sông lười dài nhất Đông Nam Á</strong> và hệ thống máng trượt nước cao hơn 20 mét.</p>
+                <p>Khuôn viên được chia thành nhiều phân khu phù hợp với mọi độ tuổi: khu vui chơi trẻ em, khu cảm giác mạnh, khu thư giãn, bãi biển nhân tạo và các khu nhà hàng, dịch vụ tiện ích. Công viên mang đậm phong cách thiết kế cổ tích, hiện đại, rất thích hợp để check-in, chụp ảnh.</p>
+                <h4>🎟️ Giá vé tham khảo</h4>
+                <ul class="list">
+                  <li>Người lớn: khoảng 450.000 VNĐ</li>
+                  <li>Trẻ em: khoảng 350.000 VNĐ</li>
+                </ul>
+                <p>👉 Điểm đến lý tưởng cho gia đình, nhóm bạn hay các đoàn khách muốn tận hưởng ngày hè sôi động và thư giãn trọn vẹn.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Từ 350.000đ</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="rung-ma-da">
+            <div class="card-media" style="--g1:#14532d; --g2:#4ade80;">
+              <img src="images/rung-ma-da.jpg" alt="Rừng Mã Đà" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">02</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Rừng Mã Đà</h3>
+              <ul class="card-meta">
+                <li>📍 Khu bảo tồn thiên nhiên – văn hóa Đồng Nai, Vĩnh Cửu</li>
+                <li>🚗 Cách TP.HCM khoảng 90 km</li>
+              </ul>
+              <p class="card-desc">Khu rừng nguyên sinh xanh mát và bí ẩn với hệ sinh thái phong phú – nơi lý tưởng cho du lịch sinh thái, trekking, cắm trại và khám phá thiên nhiên hoang dã.</p>
+              <div class="card-more" hidden>
+                <p>Khu rừng nổi bật với thảm thực vật rậm rạp, những con đường mòn uốn lượn, suối nước trong lành và đặc biệt là hồ Trị An – nơi thường xuyên diễn ra các hoạt động bơi lội, chèo thuyền kayak và câu cá thư giãn.</p>
+                <p>Không khí quanh năm mát mẻ, trong lành, rất thích hợp để “đi trốn” khỏi sự ồn ào phố thị. Rừng Mã Đà còn gắn liền với nhiều <strong>dấu tích lịch sử kháng chiến</strong>, lưu giữ ký ức về những trận đánh hào hùng của quân dân miền Nam trong kháng chiến chống Mỹ.</p>
+                <h4>🎟️ Giá vé tham khảo</h4>
+                <ul class="list"><li>Tham quan & cắm trại: 50.000 – 100.000 VNĐ/người tùy dịch vụ</li></ul>
+                <p>👉 Dành cho những ai yêu thiên nhiên, muốn tìm về sự bình yên và thử thách bản thân giữa đại ngàn xanh thẳm.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">50.000 – 100.000đ</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="ho-tri-an">
+            <div class="card-media" style="--g1:#065f46; --g2:#38bdf8;">
+              <img src="images/ho-tri-an.jpg" alt="Hồ Trị An – viên ngọc xanh của Đồng Nai" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">03</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hồ Trị An – viên ngọc xanh của Đồng Nai</h3>
+              <ul class="card-meta">
+                <li>📍 Vĩnh Cửu, Định Quán, Thống Nhất</li>
+                <li>🚗 Cách TP.HCM khoảng 70 km</li>
+              </ul>
+              <p class="card-desc">Hồ nước ngọt nhân tạo rộng lớn trên sông Đồng Nai, xây dựng từ những năm 1980 phục vụ Nhà máy Thủy điện Trị An, nay là điểm du lịch sinh thái lý tưởng.</p>
+              <div class="card-more" hidden>
+                <p>Hồ Trị An gây ấn tượng với mặt nước xanh trong, bao quanh là rừng rậm nguyên sinh và những hòn đảo nhỏ hoang sơ như <strong>đảo Ó, đảo Đồng Trường</strong>… tạo nên bức tranh thiên nhiên hài hòa, thơ mộng.</p>
+                <p>Đây là nơi lý tưởng để cắm trại, chèo thuyền kayak, câu cá, đạp xe xuyên rừng và ngắm hoàng hôn bên mặt hồ lặng sóng. Ban đêm, du khách có thể tổ chức tiệc BBQ, ngắm sao và tận hưởng không khí mát lạnh, tĩnh lặng.</p>
+                <h4>🎟️ Giá dịch vụ tham khảo</h4>
+                <ul class="list"><li>Cắm trại & tham quan: 50.000 – 150.000 VNĐ/người tùy địa điểm và gói dịch vụ</li></ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">50.000 – 150.000đ</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="thac-da-han">
+            <div class="card-media" style="--g1:#0f766e; --g2:#a3e635;">
+              <img src="images/thac-da-han.jpg" alt="Thác Đá Hàn" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">04</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Thác Đá Hàn</h3>
+              <ul class="card-meta">
+                <li>📍 Đồng Nai</li>
+                <li>🚗 Cách trung tâm Sài Gòn khoảng 70 km</li>
+              </ul>
+              <p class="card-desc">Không gian thoáng đãng, khung cảnh đa dạng, không khí trong lành mát mẻ – địa điểm cắm trại, dã ngoại cuối tuần lý tưởng cho nhóm bạn hoặc gia đình.</p>
+              <div class="card-more" hidden>
+                <p>Thác Đá Hàn là nơi lý tưởng để tụ tập bạn bè xả stress với các hoạt động tắm thác, câu cá… vào mỗi cuối tuần hay tổ chức cắm trại dã ngoại cho cả gia đình.</p>
+                <p>Điểm khiến du khách cực kỳ yêu thích là <strong>đa số các hoạt động giải trí ở đây đều miễn phí</strong>. Đặc biệt, thác Đá Hàn còn có đường đua riêng cho xe địa hình nếu bạn muốn tham gia.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Hầu hết miễn phí</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="thac-mai">
+            <div class="card-media" style="--g1:#166534; --g2:#0891b2;">
+              <img src="images/thac-mai.jpg" alt="Thác Mai – ngọn thác hoang sơ bậc nhất Đồng Nai" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">05</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Thác Mai – ngọn thác hoang sơ bậc nhất Đồng Nai</h3>
+              <ul class="card-meta">
+                <li>📍 Đồng Nai</li>
+                <li>🏍️ Cách Sài Gòn ~130 km (2 – 3 giờ xe máy)</li>
+              </ul>
+              <p class="card-desc">Khung cảnh rừng nguyên sinh choáng ngợp, bình yên và hoang sơ – địa điểm lý tưởng để cắm trại, nướng đồ ăn picnic cuối tuần.</p>
+              <div class="card-more" hidden>
+                <p>Bạn nhớ xem trước dự báo thời tiết, sau đó cùng mọi người mang theo lều, chuẩn bị đồ ăn. Nếu quá bận rộn, bạn có thể thuê lều và nhờ nhà hàng gần đó chuẩn bị giúp.</p>
+                <p>Điểm đặc biệt của Thác Mai chính là độ cao: ngọn thác cao vừa phải, nhìn từ xa dòng nước có vẻ rất nhẹ nhàng, nhưng khi đến những đoạn hẹp, dòng nước đột nhiên chuyển mình mạnh mẽ hơn bao giờ hết.</p>
+                <p>🎬 Đây cũng chính là địa điểm xuất hiện trong MV “Lật Mặt” của Lý Hải.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Cắm trại tự túc</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="card reveal" data-category="van-hoa" data-id="buu-long">
+            <div class="card-media" style="--g1:#4d7c0f; --g2:#06b6d4;">
+              <img src="images/buu-long.jpg" alt="Khu du lịch Bửu Long" loading="lazy">
+              <span class="badge">Văn hóa – Lịch sử</span>
+              <span class="card-number">06</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Khu du lịch Bửu Long</h3>
+              <ul class="card-meta">
+                <li>📍 TP. Biên Hòa, Đồng Nai</li>
+                <li>🏔️ Long Sơn Thạch Động & núi Bình Điện</li>
+              </ul>
+              <p class="card-desc">Không gian rộng rãi, cách bày trí như đang đến Vịnh Hạ Long. Bạn sẽ ngỡ ngàng trước làn nước trong xanh soi bóng vách đá.</p>
+              <div class="card-more" hidden>
+                <p>Địa điểm được chia làm hai phần chính gồm <strong>Long Sơn Thạch Động</strong> và <strong>núi Bình Điện</strong>, tạo nên khung cảnh ấn tượng khó phai.</p>
+                <ul class="list">
+                  <li>Tham gia trò chơi hiện đại như xe điện đụng tại khu vui chơi trung tâm.</li>
+                  <li>Thăm <strong>Bửu Phong Cổ Tự</strong> để cảm nhận khung cảnh nhẹ nhàng.</li>
+                  <li>Chiêm ngưỡng những bảo vật quý hiếm tại khu Tiền Sử.</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Phù hợp mọi lứa tuổi</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="card reveal" data-category="vui-choi" data-id="tre-viet">
+            <div class="card-media" style="--g1:#3f6212; --g2:#facc15;">
+              <img src="images/tre-viet.jpg" alt="Khu du lịch Tre Việt" loading="lazy">
+              <span class="badge">Vui chơi</span>
+              <span class="card-number">07</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Khu du lịch Tre Việt</h3>
+              <ul class="card-meta">
+                <li>📍 Đồng Nai – cách Sài Gòn khoảng 15 km</li>
+                <li>📐 Diện tích 45.000 m²</li>
+              </ul>
+              <p class="card-desc">Không gian mộc mạc với những mái nhà dựng từ tre, được du khách trong và ngoài nước ghé thăm thường xuyên.</p>
+              <div class="card-more" hidden>
+                <p>Nơi đây có vô vàn trò chơi từ truyền thống đến hiện đại: thỏa sức bơi lội, đạp xe trên mặt nước, chèo thuyền kayak.</p>
+                <p>Bạn cũng có thể tham gia các trò chơi truyền thống như <strong>chèo thuyền chuối, chèo xuồng ba lá hay chèo thuyền thúng</strong>.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Gần Sài Gòn nhất</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="nui-chua-chan">
+            <div class="card-media" style="--g1:#9a3412; --g2:#fbbf24;">
+              <img src="images/nui-chua-chan.jpg" alt="Núi Chứa Chan" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">08</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Núi Chứa Chan</h3>
+              <ul class="card-meta">
+                <li>📍 Xuân Lộc, Đồng Nai</li>
+                <li>🥾 Leo núi – săn bình minh, hoàng hôn</li>
+              </ul>
+              <p class="card-desc">Địa điểm yêu thích của các bạn trẻ đam mê khám phá: check-in gốc cây đa ba gốc, ngắm hoàng hôn và bình minh tuyệt đẹp.</p>
+              <div class="card-more" hidden>
+                <p>Bạn sẽ được cảm nhận vị ngọt khi uống nước suối tại núi. Nếu may mắn đến vào khoảng <strong>tháng 5</strong>, bạn sẽ có những bức hình cực kỳ thơ mộng với cánh đồng cỏ lau vàng.</p>
+                <h4>🎒 Lưu ý khi leo núi</h4>
+                <ul class="list">
+                  <li>Chọn đôi giày êm ái, nhẹ nhàng để bảo vệ đôi chân.</li>
+                  <li>Chuẩn bị đủ nước uống cho bản thân.</li>
+                  <li>Luôn bám sát đồng đội để tránh lạc đường.</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Đẹp nhất tháng 5</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="card reveal" data-category="van-hoa" data-id="da-ba-chong">
+            <div class="card-media" style="--g1:#57534e; --g2:#84cc16;">
+              <img src="images/da-ba-chong.jpg" alt="Đá Ba Chồng" loading="lazy">
+              <span class="badge">Văn hóa – Lịch sử</span>
+              <span class="card-number">09</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Đá Ba Chồng</h3>
+              <ul class="card-meta">
+                <li>📍 Trung tâm Định Quán, Đồng Nai</li>
+                <li>🏛️ Di tích thắng cảnh cấp quốc gia (1988)</li>
+              </ul>
+              <p class="card-desc">Quần thể đá với những khối lớn bé khác nhau do biến đổi địa chất, nổi bật ngay giữa khu đô thị sầm uất Định Quán.</p>
+              <div class="card-more" hidden>
+                <p>Cùng với cung đường khám phá núi Chứa Chan, bạn nhớ ghé thăm quần thể Đá Ba Chồng khi đến Đồng Nai.</p>
+                <p>Theo nghiên cứu, Đá Ba Chồng xuất hiện vào thời kỳ nền văn hóa <strong>Óc Eo – Phù Nam</strong> của Đông Nam Bộ. Năm 1988, nơi đây được xếp hạng là di tích thắng cảnh cấp quốc gia.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Di tích quốc gia</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="card reveal" data-category="miet-vuon" data-id="lang-buoi-tan-trieu">
+            <div class="card-media" style="--g1:#65a30d; --g2:#fde047;">
+              <img src="images/lang-buoi-tan-trieu.jpg" alt="Làng Bưởi Tân Triều" loading="lazy">
+              <span class="badge">Miệt vườn</span>
+              <span class="card-number">10</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Làng Bưởi Tân Triều</h3>
+              <ul class="card-meta">
+                <li>📍 Cách TP. Biên Hòa chỉ 3 km</li>
+                <li>🍽️ Ẩm thực từ bưởi</li>
+              </ul>
+              <p class="card-desc">Nép mình e thẹn nhưng thu hút rất nhiều du khách trẻ. Vừa đặt chân tới đầu làng đã cảm nhận được hương bưởi nhẹ nhàng bay trong gió.</p>
+              <div class="card-more" hidden>
+                <p>Đường đi vô cùng thuận lợi, dễ dàng. Tại đây bạn có cơ hội thưởng thức rất nhiều món ăn đặc sắc chế biến từ bưởi: <strong>nem bưởi, gà hấp bưởi</strong> (món “tiến Vua” thời xưa), <strong>rượu bưởi</strong> cho đến <strong>chè bưởi</strong>.</p>
+                <p>🎁 Món không thể quên mua về làm quà chính là rượu bưởi Tân Triều – được người dân chăm chút từng công đoạn, tạo nên hương vị khó quên.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Gần Biên Hòa</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="card reveal" data-category="miet-vuon" data-id="vuon-trai-cay-long-khanh">
+            <div class="card-media" style="--g1:#b91c1c; --g2:#f59e0b;">
+              <img src="images/vuon-trai-cay-long-khanh.jpg" alt="Vườn trái cây Long Khánh" loading="lazy">
+              <span class="badge">Miệt vườn</span>
+              <span class="card-number">11</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Vườn trái cây Long Khánh</h3>
+              <ul class="card-meta">
+                <li>📍 Long Khánh, Đồng Nai</li>
+                <li>📅 Đẹp nhất từ tháng 7 đến tháng 8</li>
+              </ul>
+              <p class="card-desc">Những khu vườn bạt ngàn trái cây nhiệt đới như chôm chôm, sầu riêng, dừa, măng cụt… chờ bạn thưởng thức.</p>
+              <div class="card-more" hidden>
+                <p>Chỉ với <strong>50.000 VNĐ</strong> vé vào cửa, bạn được thỏa thích thưởng thức trái cây nơi đây. Nếu có thời gian, hãy cắm trại qua đêm, thong dong ngồi câu cá – chắc hẳn bạn sẽ nhớ mãi khoảnh khắc đó.</p>
+                <p>Trái cây thơm ngon, phong cảnh hữu tình, không khí trong lành sẽ giúp bạn “sạc” năng lượng sau những ngày làm việc vất vả.</p>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">Vé 50.000đ</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="card reveal" data-category="thien-nhien" data-id="dao-o">
+            <div class="card-media" style="--g1:#0e7490; --g2:#34d399;">
+              <img src="images/cu-lao-pho.jpg" alt="Đảo Ó" loading="lazy">
+              <span class="badge">Thiên nhiên</span>
+              <span class="card-number">12</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Đảo Ó</h3>
+              <ul class="card-meta">
+                <li>📍 Giữa lòng hồ Trị An, xã Mã Đà, Vĩnh Cửu</li>
+                <li>🚤 ~30 phút đi thuyền từ bến xã Vĩnh An</li>
+              </ul>
+              <p class="card-desc">Được mệnh danh là “ốc đảo xanh” giữa rừng già và hồ nước mênh mông – nơi yên tĩnh để thư giãn cuối tuần.</p>
+              <div class="card-more" hidden>
+                <p>Trên đảo, không khí vô cùng trong lành, cây cối xanh mát quanh năm, tiếng chim hót rộn ràng và mặt hồ phẳng lặng tạo nên khung cảnh vừa hoang sơ vừa thơ mộng.</p>
+                <p>Du khách có thể cắm trại qua đêm, picnic, chèo kayak, câu cá, đạp xe quanh đảo hoặc đơn giản là đọc sách dưới tán cây. Dịch vụ trên đảo khá cơ bản, phù hợp với người thích trải nghiệm gần gũi thiên nhiên.</p>
+                <h4>🎟️ Giá vé tham khảo (2025)</h4>
+                <ul class="list"><li>150.000 – 300.000 VNĐ/người (gồm vé tàu và phí vào đảo)</li></ul>
+              </div>
+              <div class="card-footer">
+                <span class="price-tag">150.000 – 300.000đ</span>
+                <div class="card-btn-group">
+                  <button class="btn-map-jump" type="button" title="Xem vị trí trên bản đồ">📍 Bản đồ</button>
+                  <button class="btn btn-outline btn-detail" type="button">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <span aria-hidden="true">🧭</span>
+          Không tìm thấy điểm đến phù hợp. Hãy thử từ khóa khác nhé!
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BẢN ĐỒ DU LỊCH & TÌM KIẾM VỊ TRÍ ===== -->
+    <section class="section section-alt" id="ban-do">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Định vị chính xác</span>
+          <h2>Bản đồ du lịch Đồng Nai &amp; Chỉ đường Google Maps</h2>
+          <p>Gõ tên địa điểm du lịch vào thanh tìm kiếm hoặc chọn trực tiếp trong danh sách 12 khu du lịch để xem vị trí thực tế, ảnh vệ tinh và mở chỉ đường từ TP.HCM.</p>
+        </header>
+
+        <!-- Thanh tìm kiếm vị trí trên Google Maps -->
+        <div class="map-search-bar reveal">
+          <form class="map-search-form" id="mapSearchForm" autocomplete="off">
+            <div class="map-input-wrap">
+              <label for="mapSearchInput" class="skip-link">Tìm địa điểm du lịch trên bản đồ</label>
+              <span class="map-input-icon" aria-hidden="true">🔍</span>
+              <input
+                type="text"
+                id="mapSearchInput"
+                placeholder="Gõ tên khu du lịch hoặc địa điểm tại Đồng Nai (VD: Hồ Trị An, Bửu Long, Thác Mai, Chứa Chan...)"
+              >
+              <button type="button" class="map-clear-btn" id="mapClearBtn" aria-label="Xóa tìm kiếm" hidden>×</button>
+              <ul class="map-suggest-list" id="mapSuggestList" role="listbox" aria-label="Gợi ý địa điểm" hidden></ul>
+            </div>
+            <button type="submit" class="btn btn-primary">📍 Tìm trên Map</button>
+          </form>
+
+          <div class="map-controls-row">
+            <div class="map-region-pills" role="group" aria-label="Chọn khu vực nhanh">
+              <button type="button" class="chip map-region-btn active" data-area="all">🌏 Tất cả (12 điểm)</button>
+              <button type="button" class="chip map-region-btn" data-area="bien-hoa">🏙️ Biên Hòa – Nhơn Trạch</button>
+              <button type="button" class="chip map-region-btn" data-area="vinh-cuu">🏞️ Vĩnh Cửu – Trị An</button>
+              <button type="button" class="chip map-region-btn" data-area="dinh-quan">⛰️ Trảng Bom – Định Quán</button>
+              <button type="button" class="chip map-region-btn" data-area="long-khanh">🍈 Long Khánh – Xuân Lộc</button>
+            </div>
+
+            <div class="map-type-switch" role="group" aria-label="Chế độ hiển thị bản đồ">
+              <button type="button" class="map-type-btn active" data-maptype="m">🗺️ Bản đồ</button>
+              <button type="button" class="map-type-btn" data-maptype="h">🛰️ Vệ tinh</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khung Bản đồ 2 cột: Danh sách 12 khu du lịch + Google Maps -->
+        <div class="map-explorer reveal">
+          <aside class="map-sidebar" aria-label="Danh sách địa điểm trên bản đồ">
+            <div class="map-sidebar-head">
+              <h3>📍 Điểm du lịch trên bản đồ</h3>
+              <span id="mapSidebarCount">12 địa điểm</span>
+            </div>
+            <div class="map-place-list" id="mapPlaceList"></div>
+          </aside>
+
+          <div class="map-stage">
+            <div class="map-frame-wrap">
+              <iframe
+                id="googleMapFrame"
+                title="Bản đồ Google Maps du lịch Đồng Nai"
+                src="https://maps.google.com/maps?q=C%C3%B4ng+vi%C3%AAn+n%C6%B0%E1%BB%9Bc+The+Amazing+Bay,+Qu%E1%BB%91c+l%E1%BB%99+51,+Bi%C3%AAn+H%C3%B2a,+%C4%90%E1%BB%93ng+Nai&t=m&z=15&ie=UTF8&iwloc=B&output=embed&hl=vi"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="map-active-bar" id="mapActiveBar">
+              <div class="map-active-info">
+                <div class="map-active-head">
+                  <span class="pill" id="mapActiveBadge">Vui chơi</span>
+                  <span class="map-coords" id="mapActiveCoords">🌐 10.8749° B, 106.8704° Đ</span>
+                </div>
+                <h3 id="mapActiveTitle">Công viên nước The Amazing Bay – Vịnh Kỳ Diệu</h3>
+                <p id="mapActiveAddress">📍 Khu du lịch Sơn Tiên, Quốc lộ 51, P. An Hòa, TP. Biên Hòa, Đồng Nai · 🚗 ~30 km từ TP.HCM (~45 phút)</p>
+              </div>
+              <div class="map-active-actions">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=C%C3%B4ng+vi%C3%AAn+n%C6%B0%E1%BB%9Bc+The+Amazing+Bay,+Bi%C3%AAn+H%C3%B2a,+%C4%90%E1%BB%93ng+Nai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  id="mapDirBtn"
+                >🧭 Chỉ đường Google Maps ↗</a>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=C%C3%B4ng+vi%C3%AAn+n%C6%B0%E1%BB%9Bc+The+Amazing+Bay,+Bi%C3%AAn+H%C3%B2a,+%C4%90%E1%BB%93ng+Nai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                  id="mapOpenLargeBtn"
+                >🌏 Mở bản đồ lớn ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KINH NGHIỆM ===== -->
+    <section class="section" id="kinh-nghiem">
+      <div class="container exp-layout">
+        <div class="exp-intro reveal">
+          <span class="eyebrow">Cẩm nang</span>
+          <h2>Kinh nghiệm du lịch Đồng Nai</h2>
+          <p>Những lưu ý nhỏ giúp chuyến đi của bạn suôn sẻ, an toàn và trọn vẹn hơn.</p>
+          <div class="tip-box">
+            💡 <strong>Mẹo nhỏ:</strong> Phần lớn điểm đến chỉ cách TP.HCM 30 – 90 km, rất hợp cho chuyến đi trong ngày hoặc cuối tuần bằng xe máy.
+          </div>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">🚌 Di chuyển đến Đồng Nai như thế nào?</button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul>
+                  <li><strong>Từ các tỉnh phía Nam:</strong> dễ dàng lựa chọn xe khách hoặc xe máy.</li>
+                  <li><strong>Từ các tỉnh phía Bắc:</strong> nên sắp xếp thời gian săn vé máy bay vào TP.HCM, sau đó di chuyển tiếp khoảng 30 km đến Biên Hòa.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">📅 Nên đi vào thời điểm nào?</button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul>
+                  <li><strong>Tháng 5:</strong> săn ảnh cánh đồng cỏ lau vàng trên núi Chứa Chan.</li>
+                  <li><strong>Tháng 7 – 8:</strong> mùa trái cây chín rộ ở vườn Long Khánh.</li>
+                  <li><strong>Mùa hè:</strong> thời điểm lý tưởng để vui chơi tại The Amazing Bay.</li>
+                  <li>Luôn <strong>xem trước dự báo thời tiết</strong> nếu có ý định cắm trại ở thác, hồ, đảo.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">⛺ Cần chuẩn bị gì khi cắm trại, leo núi?</button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul>
+                  <li>Lều, đồ ăn – hoặc thuê lều và nhờ nhà hàng gần đó chuẩn bị giúp.</li>
+                  <li>Giày êm, nhẹ; mang đủ nước uống.</li>
+                  <li>Đi theo nhóm, luôn bám sát đồng đội để tránh lạc đường.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">💰 Chi phí tham quan khoảng bao nhiêu?</button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul>
+                  <li>Thác Đá Hàn: đa số hoạt động miễn phí.</li>
+                  <li>Rừng Mã Đà: 50.000 – 100.000đ/người; Hồ Trị An: 50.000 – 150.000đ/người.</li>
+                  <li>Vườn trái cây Long Khánh: vé khoảng 50.000đ.</li>
+                  <li>Đảo Ó: 150.000 – 300.000đ/người; The Amazing Bay: 350.000 – 450.000đ.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA sang trang đặc sản ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Đi Đồng Nai, đừng quên ăn gì?</h2>
+            <p>Gỏi cá Biên Hòa, xôi chiên phồng, lẩu tôm, cơm gà cá mặn, bưởi Tân Triều… khám phá ngay 16 đặc sản.</p>
+          </div>
+          <a href="dac-san.html" class="btn btn-primary">Xem đặc sản Đồng Nai →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIÊN HỆ ===== -->
+    <section class="section section-alt" id="lien-he">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Liên hệ</span>
+          <h2>Đăng ký nhận tư vấn lịch trình</h2>
+          <p>Để lại thông tin, chúng tôi sẽ gợi ý lịch trình phù hợp với nhóm của bạn.</p>
+        </header>
+
+        <div class="contact-layout">
+          <aside class="contact-info reveal">
+            <h3>Đồng Nai Xanh</h3>
+            <p>Cẩm nang du lịch & ẩm thực Đồng Nai dành cho bạn trẻ yêu khám phá.</p>
+            <ul>
+              <li><span aria-hidden="true">📍</span> TP. Biên Hòa, Đồng Nai</li>
+              <li><span aria-hidden="true">📞</span> 0900 000 000</li>
+              <li><span aria-hidden="true">✉️</span> lienhe@dongnaixanh.vn</li>
+              <li><span aria-hidden="true">🕒</span> 8:00 – 21:00 mỗi ngày</li>
+            </ul>
+          </aside>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullname">Họ và tên <span class="req">*</span></label>
+                <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="09xxxxxxxx">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="ban@example.com">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="destination">Điểm đến quan tâm <span class="req">*</span></label>
+                <select id="destination" name="destination">
+                  <option value="">-- Chọn điểm đến --</option>
+                  <option>The Amazing Bay</option>
+                  <option>Rừng Mã Đà</option>
+                  <option>Hồ Trị An</option>
+                  <option>Thác Đá Hàn</option>
+                  <option>Thác Mai</option>
+                  <option>Khu du lịch Bửu Long</option>
+                  <option>Khu du lịch Tre Việt</option>
+                  <option>Núi Chứa Chan</option>
+                  <option>Đá Ba Chồng</option>
+                  <option>Làng Bưởi Tân Triều</option>
+                  <option>Vườn trái cây Long Khánh</option>
+                  <option>Đảo Ó</option>
+                </select>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="date">Ngày khởi hành <span class="req">*</span></label>
+                <input type="date" id="date" name="date">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="people">Số người <span class="req">*</span></label>
+                <input type="number" id="people" name="people" min="1" max="50" placeholder="1 – 50">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group full">
+                <label for="message">Lời nhắn</label>
+                <textarea id="message" name="message" maxlength="500" placeholder="Ví dụ: nhóm 5 người, muốn cắm trại qua đêm..."></textarea>
+                <span class="char-count" id="charCount">0/500</span>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group full">
+                <label class="checkbox-line" for="agree">
+                  <input type="checkbox" id="agree" name="agree">
+                  <span>Tôi đồng ý để Đồng Nai Xanh liên hệ tư vấn qua thông tin trên.</span>
+                </label>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Gửi đăng ký</button>
+              <button type="reset" class="btn btn-outline">Nhập lại</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch và ẩm thực Đồng Nai – vùng đất xanh mát, hiền hòa ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="index.html#kinh-nghiem">Kinh nghiệm</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="goi-y.html#trac-nghiem">Trắc nghiệm sở thích</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế & Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL CHI TIẾT ===== -->
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" aria-label="Đóng">×</button>
+      <div class="card-media modal-media"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <ul class="card-meta" id="modalMeta"></ul>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

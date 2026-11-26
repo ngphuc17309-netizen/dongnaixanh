@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá nghệ thuật Đồng Nai qua hai dòng chảy đặc sắc: 7 làng nghề thủ công truyền thống hơn ba thế kỷ và nghệ thuật ca hát từ đờn ca tài tử, dân ca buôn làng đến âm nhạc đương đại.">
+  <title>Nghệ thuật Đồng Nai | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="index.html#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="index.html#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="index.html#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="dac-san.html#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="dac-san.html#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html" aria-current="page"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="ho-tro.html#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="index.html#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth" id="headerAuthBtn">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== PAGE HERO ===== -->
+    <!-- THAY ẢNH BANNER: đặt file images/hero-nghe-thuat.jpg vào thư mục images -->
+    <section class="page-hero art-hero" style="background-image: url('images/hero-nghe-thuat.jpg'), linear-gradient(135deg, #3b1d0a, #145c39 58%, #0e7490);">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ</a><span>/</span><span>Nghệ thuật</span>
+        </nav>
+        <span class="slide-tag">🎨 Di sản bàn tay &amp; giai điệu quê hương</span>
+        <h1>Nghệ thuật Đồng Nai – Tinh hoa làng nghề &amp; tiếng hát</h1>
+        <p>Hành trình hơn ba thế kỷ kết tinh qua những làng nghề thủ công nức tiếng và dòng chảy âm nhạc đa sắc từ đờn ca tài tử, dân ca buôn làng đến ca khúc đương đại.</p>
+        <div class="slide-actions">
+          <a href="#lang-nghe" class="btn btn-accent">🏺 Khám phá Làng nghề ↓</a>
+          <a href="#ca-hat" class="btn btn-ghost">🎶 Khám phá Ca hát ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THỐNG KÊ ===== -->
+    <section class="stats" aria-label="Con số nổi bật">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-number" data-count="7">0</span><span class="stat-label">Làng nghề truyền thống tiêu biểu</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="300" data-suffix="+ năm">0</span><span class="stat-label">Lịch sử nghề đá Bửu Long</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="1875">0</span><span class="stat-label">Dấu mốc lò gốm Tân Vạn</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="7">0</span><span class="stat-label">Ca khúc tiêu biểu về Đồng Nai</span></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PHẦN 1: LÀNG NGHỀ TRUYỀN THỐNG
+         ========================================================= -->
+    <section class="section" id="lang-nghe">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Phần I · Bàn tay nghệ nhân</span>
+          <h2>Các làng nghề thủ công truyền thống Đồng Nai</h2>
+          <p>Từ gỗ, tôn, mây tre, thổ cẩm đến đá xanh và đất sét đỏ – mỗi làng nghề là một lát cắt lịch sử gắn liền với quá trình lập nghiệp trên đất Biên Hòa – Đồng Nai.</p>
+        </header>
+
+        <!-- Bộ lọc nhanh làng nghề theo khu vực -->
+        <div class="art-filter-bar reveal" role="group" aria-label="Lọc làng nghề theo địa bàn">
+          <button class="chip craft-chip active" type="button" data-region="all">Tất cả (7 làng nghề)</button>
+          <button class="chip craft-chip" type="button" data-region="ho-nai">🪵 Hố Nai – Biên Hòa</button>
+          <button class="chip craft-chip" type="button" data-region="ven-song">🏺 Bửu Long – Tân Vạn – Phước Tân</button>
+          <button class="chip craft-chip" type="button" data-region="mien-que">🌾 Vĩnh Cửu – Tân Phú</button>
+        </div>
+
+        <div class="craft-list" id="craftList">
+          <!-- 1. Nghề làm đồ mộc -->
+          <article class="craft-card reveal" data-region="ho-nai" data-art-id="nghe-moc">
+            <figure class="art-media" style="--art-bg1:#5c3317; --art-bg2:#b45309;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-moc.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-moc.jpg" alt="Nghề làm đồ mộc ở Biên Hòa – Hố Nai" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề làm đồ mộc">
+                <defs>
+                  <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#fde68a" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#78350f" stop-opacity="0.4"/>
+                  </linearGradient>
+                </defs>
+                <rect width="480" height="320" fill="url(#woodGrad)"/>
+                <circle cx="390" cy="70" r="95" fill="rgba(255,255,255,0.07)"/>
+                <!-- Mái đình & cột gỗ chạm khắc -->
+                <path d="M90 155 Q240 85 390 155 L365 168 Q240 112 115 168 Z" fill="#fef3c7" opacity="0.92"/>
+                <rect x="135" y="168" width="18" height="82" rx="4" fill="#fde68a"/>
+                <rect x="231" y="168" width="18" height="82" rx="4" fill="#fde68a"/>
+                <rect x="327" y="168" width="18" height="82" rx="4" fill="#fde68a"/>
+                <rect x="105" y="250" width="270" height="12" rx="6" fill="#fef3c7"/>
+                <!-- Vân gỗ & đục chạm -->
+                <circle cx="240" cy="208" r="24" fill="none" stroke="#fef3c7" stroke-width="3" stroke-dasharray="6 4"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.88">🪵 Minh họa: Nghề mộc mỹ nghệ (thêm ảnh: images/nghe-moc.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">01 · Hố Nai, Biên Hòa</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Làng nghề mộc</span>
+                <span>📍 Tân Biên &amp; Tân Hòa (Hố Nai), TP. Biên Hòa</span>
+              </div>
+              <h3>Nghề làm đồ mộc</h3>
+              <p>Phổ biến ở Đồng Nai từ thời xưa do nhu cầu về xây dựng nhà cửa và đóng thuyền. Đầu thế kỷ XX, một số nghệ nhân đã mở một xưởng làm mộc ở Biên Hòa, chuyên sản xuất đồ mộc thủ công mỹ nghệ phục vụ cho kiến trúc nhà cửa và trang trí nội thất. Những ngôi nhà cổ có kiến trúc bằng gỗ có kết cấu xây dựng rất mỹ thuật. Có hai dạng kiến trúc đồ gỗ ứng dụng mỹ thuật, đó là: <strong>Đồ mộc trên kiến trúc đình, chùa, miếu</strong> và <strong>đồ mộc trên kiến trúc nhà ở dân gian</strong>.</p>
+              <p>Sau năm 1975, một số làng mộc được hình thành trong tỉnh, tiêu biểu là làng mộc ở Hố Nai do những thợ gốc miền Bắc di cư năm 1954 thực hiện. Ngày nay, ở khu vực phường Tân Biên và Tân Hòa thành phố Biên Hòa (khu vực Hố Nai) là nơi tập trung nhiều cơ sở làm mộc thủ công, đồ mộc sản xuất theo kiểu hộ gia đình, cơ sở và doanh nghiệp. Những sản phẩm đồ mộc của các cơ sở tư nhân và của các doanh nghiệp ở Đồng Nai ngày càng đáp ứng được thị trường tiêu thụ đồ mộc ở trong và ngoài địa phương đến với từng gia đình và xã hội trong cuộc sống hiện đại và hội nhập.</p>
+            </div>
+          </article>
+
+          <!-- 2. Nghề gò tôn -->
+          <article class="craft-card reverse reveal" data-region="ho-nai" data-art-id="nghe-go-ton">
+            <figure class="art-media" style="--art-bg1:#334155; --art-bg2:#0ea5e9;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-go-ton.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-go-ton.jpg" alt="Nghề gò tôn ở Hố Nai" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề gò tôn">
+                <circle cx="110" cy="80" r="90" fill="rgba(255,255,255,0.08)"/>
+                <!-- Xô tôn & thùng nước -->
+                <polygon points="150,125 250,125 235,235 165,235" fill="rgba(241,245,249,0.9)" stroke="#e2e8f0" stroke-width="3"/>
+                <path d="M152 125 Q200 72 248 125" fill="none" stroke="#f8fafc" stroke-width="4"/>
+                <line x1="158" y1="162" x2="242" y2="162" stroke="#64748b" stroke-width="2.5"/>
+                <line x1="162" y1="198" x2="238" y2="198" stroke="#64748b" stroke-width="2.5"/>
+                <!-- Búa gò thủ công -->
+                <rect x="305" y="135" width="12" height="105" rx="5" transform="rotate(28 311 187)" fill="#fde68a"/>
+                <rect x="292" y="118" width="58" height="22" rx="4" transform="rotate(28 321 129)" fill="#f8fafc"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.9">🔨 Minh họa: Nghề gò tôn Hố Nai (thêm ảnh: images/nghe-go-ton.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">02 · KP.2 &amp; KP.3 Hố Nai</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Thủ công gia dụng</span>
+                <span>📍 Phường Hố Nai, TP. Biên Hòa · ~60 năm lịch sử</span>
+              </div>
+              <h3>Nghề gò tôn</h3>
+              <p>Xuất hiện ở Hố Nai cách đây khoảng 60 năm, do những người từ miền Bắc di cư vào Nam mang theo. Với bàn tay khéo léo, những người thợ gò tôn đã tạo nên nhiều sản phẩm, như: <strong>thùng, xô đựng nước, gáo múc nước, nồi nấu rượu, máng xối</strong> và nhiều sản phẩm gia dụng khác. Nghề gò tôn này chỉ làm theo mùa, hàng năm, từ <strong>tháng 8 đến tháng 11</strong> là thời điểm nghề gò tôn sôi động nhất.</p>
+              <p>Thời kỳ nghề gò tôn phát triển mạnh là vào khoảng năm 2004 đến năm 2010. Trước đây, có khoảng 300 hộ làm nghề gò tôn, từ năm 2011 đến nay, những hộ làm nghề gò tôn ở KP.2, 3 phường Hố Nai giảm dần, do thùng nhựa xuất hiện nhiều, giá lại rẻ nên người tiêu dùng chuyển qua dùng thùng nhựa, hiện nay trên địa bàn chỉ còn gần 10 cơ sở, những hộ khác chủ yếu gia công lại cho các cơ sở vào những thời điểm nhiều hàng.</p>
+            </div>
+          </article>
+
+          <!-- 3. Nghề trồng mía, nấu đường ở Vĩnh Cửu -->
+          <article class="craft-card reveal" data-region="mien-que" data-art-id="nghe-mia-duong">
+            <figure class="art-media" style="--art-bg1:#166534; --art-bg2:#eab308;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-mia-duong.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-mia-duong.jpg" alt="Nghề trồng mía, nấu đường ở Vĩnh Cửu" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề trồng mía nấu đường Vĩnh Cửu">
+                <circle cx="380" cy="80" r="75" fill="rgba(254,240,138,0.18)"/>
+                <!-- Cây mía -->
+                <line x1="130" y1="75" x2="130" y2="245" stroke="#bbf7d0" stroke-width="10" stroke-linecap="round"/>
+                <line x1="160" y1="90" x2="160" y2="245" stroke="#dcfce7" stroke-width="9" stroke-linecap="round"/>
+                <path d="M130 90 Q95 65 78 85 M130 105 Q165 75 185 95 M160 105 Q195 80 212 102" fill="none" stroke="#dcfce7" stroke-width="4" stroke-linecap="round"/>
+                <!-- Chảo nấu đường & lửa hồng -->
+                <path d="M235 175 Q305 245 375 175 Z" fill="#fef08a"/>
+                <ellipse cx="305" cy="175" rx="70" ry="14" fill="#ca8a04"/>
+                <path d="M282 238 Q305 202 328 238" fill="#fb923c"/>
+                <path d="M275 142 Q268 122 278 106 M305 138 Q298 115 308 98 M335 142 Q328 122 338 106" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="3" stroke-linecap="round"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.9">🎋 Minh họa: Mía đường Vĩnh Cửu (thêm ảnh: images/nghe-mia-duong.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">03 · Bình Lợi, Vĩnh Cửu</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Nông sản – Thủ công</span>
+                <span>📍 Xã Bình Lợi, huyện Vĩnh Cửu</span>
+              </div>
+              <h3>Nghề trồng mía, nấu đường ở Vĩnh Cửu</h3>
+              <p>Nghề này có lịch sử lâu đời và phát triển rộng rãi nhất. Sự phát triển của nghề trồng mía nấu đường thủ công đã góp phần quan trọng trong nền kinh tế sản xuất hàng hóa của địa phương trước đây. Có thể nói nghề trồng mía nấu đường thủ công truyền thống ở huyện Vĩnh Cửu đã tạo cho địa phương một bản sắc văn hoá riêng mà không nơi nào ở Đồng Nai có được. Tính đến cuối năm 2011, toàn huyện có trên 100 ngàn ha mía, bốn lò nấu đường thủ công còn duy trì hoạt động theo mùa vụ tại địa bàn xã Bình Lợi.</p>
+              <p>Niềm kiêu hãnh, tự hào quê hương, tự hào trong lao động sản xuất, tự hào về nghề trồng mía, nấu đường thủ công đã được kết tinh trong thơ ca, lời hát ru của những người con Vĩnh Cửu, Biên Hòa – Đồng Nai:</p>
+              <blockquote class="folk-verse">
+                “Vái ông tơ một chong bánh tráng,<br>
+                Vái bà nguyệt một táng đường đinh,<br>
+                Đôi ta kết nghĩa chung tình,<br>
+                Dẫu ăn cơm với mắm, Ngủ ngoài đình cũng ưng”.
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- 4. Nghề đan lát (mây, tre, lá) -->
+          <article class="craft-card reverse reveal" data-region="ven-song" data-art-id="nghe-dan-lat">
+            <figure class="art-media" style="--art-bg1:#3f6212; --art-bg2:#14b8a6;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-dan-lat.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-dan-lat.jpg" alt="Nghề đan lát mây tre lá Biên Hòa" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề đan lát mây tre lá">
+                <!-- Nón lá buông -->
+                <polygon points="185,95 95,215 275,215" fill="rgba(254,249,195,0.9)" stroke="#fde047" stroke-width="3"/>
+                <path d="M155 135 Q185 148 215 135 M132 165 Q185 182 238 165 M112 195 Q185 214 258 195" fill="none" stroke="#a16207" stroke-width="2"/>
+                <!-- Rổ mây tre đan -->
+                <ellipse cx="335" cy="185" rx="68" ry="42" fill="#fef08a" opacity="0.92"/>
+                <ellipse cx="335" cy="168" rx="68" ry="20" fill="#ca8a04"/>
+                <path d="M285 185 L385 185 M295 202 L375 202 M315 168 L315 224 M335 168 L335 227 M355 168 L355 224" stroke="#854d0e" stroke-width="2"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.9">🧺 Minh họa: Đan lát mây tre lá (thêm ảnh: images/nghe-dan-lat.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">04 · Phước Tân, Tam Hòa, Quang Vinh</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Mây – Tre – Lá</span>
+                <span>📍 Phước Tân, Phước Lộc, Tam Hòa &amp; Quang Vinh</span>
+              </div>
+              <h3>Nghề đan lát (mây, tre, lá)</h3>
+              <p>Trước đây nghề đan lát các dụng cụ mây, tre, lá thực hiện ở từng gia đình đáp ứng yêu cầu tự cấp, tự túc. Khi kinh tế phát triển kéo theo sự phân công lại lao động xã hội thì nghề đan lát mới trở thành ngành nghề sản xuất hàng hóa. Ở làng Phước Tân người ta chuyên đan các loại như: <strong>rổ, rá, thúng, mủng, dần, sàng</strong> đem đi các chợ làng để bán, còn các làng Phước Lộc, Vĩnh Phước, Tân Long có <strong>nghề làm nón lá buông</strong>. Nón được khâu theo khuôn hình chóp làm sẵn từ 13 đến 17 vành tùy theo lớn nhỏ.</p>
+              <p>Những năm đầu thập niên 80, các công ty xuất khẩu của tỉnh mở được thị trường hàng hóa mây, tre đan thuộc các nước Đông Âu và Liên Xô cũ, một số người ở Biên Hòa tổ chức ra các cơ sở đan lát xuất khẩu các sản phẩm bằng tre, mây, lá gồm: mũ (nón), khay, đĩa, hộp, giỏ xách... Ngày nay do thiếu nguyên liệu và thị hiếu tiêu dùng giảm nên đại bộ phận đã bỏ nghề, ở thành phố Biên Hòa chỉ còn 2 cơ sở ở phường Tam Hòa và phường Quang Vinh hoạt động, mỗi cơ sở có từ 60 đến 100 nhân công, hàng năm xuất khẩu ra thị trường thế giới một khối lượng hàng đan lát mây, tre, lá rất lớn thu về cho tỉnh hàng chục ngàn đô la Mỹ.</p>
+            </div>
+          </article>
+
+          <!-- 5. Nghề dệt thổ cẩm ở Tà Lài -->
+          <article class="craft-card reveal" data-region="mien-que" data-art-id="nghe-tho-cam">
+            <figure class="art-media" style="--art-bg1:#7f1d1d; --art-bg2:#d97706;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-tho-cam.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-tho-cam.jpg" alt="Nghề dệt thổ cẩm của người Mạ ở Tà Lài" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề dệt thổ cẩm Tà Lài">
+                <!-- Tấm thổ cẩm hoa văn hình học người Mạ -->
+                <rect x="95" y="75" width="290" height="175" rx="10" fill="#1c1917" stroke="#fde68a" stroke-width="3"/>
+                <line x1="95" y1="112" x2="385" y2="112" stroke="#ef4444" stroke-width="8"/>
+                <polyline points="105,152 130,130 155,152 180,130 205,152 230,130 255,152 280,130 305,152 330,130 355,152 375,135" fill="none" stroke="#fde047" stroke-width="4"/>
+                <polyline points="105,185 130,207 155,185 180,207 205,185 230,207 255,185 280,207 305,185 330,207 355,185 375,202" fill="none" stroke="#38bdf8" stroke-width="4"/>
+                <line x1="95" y1="224" x2="385" y2="224" stroke="#ef4444" stroke-width="8"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.92">🧶 Minh họa: Thổ cẩm người Mạ – Tà Lài (thêm ảnh: images/nghe-tho-cam.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">05 · Tà Lài, Tân Phú</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Di sản người Mạ</span>
+                <span>📍 Xã Tà Lài, huyện Tân Phú</span>
+              </div>
+              <h3>Nghề dệt thổ cẩm ở Tà Lài</h3>
+              <p>Đây là làng nghề của người Mạ ở xã Tà Lài, huyện Tân Phú. Sản phẩm thổ cẩm truyền thống của người Mạ là <strong>chăn, váy, khố, dây quấn đầu</strong>… Trên những sản phẩm đó, qua bàn tay khéo léo của người dệt, thổ cẩm có nhiều loại hoa văn trang trí đa dạng. Đó không chỉ là sự kết hợp khéo léo của màu sắc mà còn là biểu tượng cho cảm nghĩ, cách nhìn nhận về thế giới vốn phong phú của cộng đồng người Mạ. Tùy thuộc vào từng loại sản phẩm, công dụng của nó mà người Mạ trang trí các loại hoa văn có ý nghĩa.</p>
+              <p>Trước đây, các nguyên liệu để dệt thổ cẩm đều tự tay người Mạ làm: từ việc trồng bông làm sợi, xe chỉ cho đến việc lấy vỏ cây làm màu. Ngày nay, nghề dệt thổ cẩm Mạ vẫn còn duy trì trong cộng đồng nhưng các khung quay, đồ cán sợi, xe chỉ không còn nữa; tuy nhiên, qua nhiều dự án truyền dạy, nghề dệt thổ cẩm Mạ đang hồi sinh.</p>
+            </div>
+          </article>
+
+          <!-- 6. Nghề đá Bửu Long -->
+          <article class="craft-card reverse reveal" data-region="ven-song" data-art-id="nghe-da-buu-long">
+            <figure class="art-media" style="--art-bg1:#1e293b; --art-bg2:#0d9488;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-da-buu-long.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-da-buu-long.jpg" alt="Làng nghề điêu khắc đá Bửu Long" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề điêu khắc đá Bửu Long">
+                <circle cx="240" cy="150" r="95" fill="rgba(153,246,228,0.1)"/>
+                <!-- Khối đá xanh granit điêu khắc -->
+                <polygon points="150,235 178,105 238,78 298,112 325,235" fill="#94a3b8" stroke="#e2e8f0" stroke-width="3"/>
+                <polygon points="238,78 298,112 325,235 242,235" fill="#64748b"/>
+                <circle cx="238" cy="148" r="26" fill="none" stroke="#ccfbf1" stroke-width="3"/>
+                <rect x="128" y="235" width="224" height="16" rx="4" fill="#cbd5e1"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.92">🗿 Minh họa: Điêu khắc đá xanh Bửu Long (thêm ảnh: images/nghe-da-buu-long.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">06 · Bửu Long, Biên Hòa · 300 năm</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Điêu khắc mỹ nghệ</span>
+                <span>📍 Phường Bửu Long, TP. Biên Hòa · 300 năm hình thành</span>
+              </div>
+              <h3>Nghề đá Bửu Long</h3>
+              <p>Hình thành cách đây <strong>300 năm</strong>, làng nghề đá truyền thống Bửu Long (TP. Biên Hòa, tỉnh Đồng Nai) đã nổi danh khắp cả nước và cũng có tiếng ở nước ngoài. Hiện nay, nghề điêu khắc đá đã phát triển rộng khắp mọi nơi, nhưng hiếm có nơi nào các tác phẩm được đánh giá cao như ở Bửu Long. Ở đó có những nghệ nhân với tay nghề lão luyện, làm việc trên loại <strong>đá xanh granit đặc trưng</strong> của vùng, đã tạo nên những sản phẩm đầy tính nghệ thuật.</p>
+            </div>
+          </article>
+
+          <!-- 7. Nghề gốm Tân Vạn -->
+          <article class="craft-card reveal" data-region="ven-song" data-art-id="nghe-gom-tan-van">
+            <figure class="art-media" style="--art-bg1:#7c2d12; --art-bg2:#ea580c;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nghe-gom-tan-van.jpg hoặc đổi src bên dưới -->
+              <img src="images/nghe-gom-tan-van.jpg" alt="Nghề gốm Tân Vạn – Gốm mỹ nghệ Biên Hòa" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 320" role="img" aria-label="Minh họa tượng trưng nghề gốm Tân Vạn Biên Hòa">
+                <circle cx="240" cy="155" r="96" fill="rgba(254,215,170,0.12)"/>
+                <!-- Bình gốm mỹ nghệ & lu gốm sành -->
+                <path d="M180 92 L220 92 L212 118 Q250 155 232 238 L168 238 Q150 155 188 118 Z" fill="#fed7aa" stroke="#fff7ed" stroke-width="3"/>
+                <path d="M167 168 Q200 182 233 168 M166 192 Q200 206 234 192" fill="none" stroke="#9a3412" stroke-width="3"/>
+                <path d="M275 130 L328 130 Q352 175 335 238 L268 238 Q252 175 275 130 Z" fill="#fdba74" stroke="#ffedd5" stroke-width="2.5"/>
+                <text x="240" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" opacity="0.92">🏺 Minh họa: Gốm Tân Vạn – Biên Hòa (thêm ảnh: images/nghe-gom-tan-van.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">07 · Tân Vạn, Biên Hòa · Từ 1875</span>
+            </figure>
+
+            <div class="craft-body">
+              <div class="craft-meta">
+                <span class="pill">Gốm cổ truyền &amp; Mỹ nghệ</span>
+                <span>📍 Tân Vạn, TP. Biên Hòa · Hình thành từ 1875</span>
+              </div>
+              <h3>Nghề gốm Tân Vạn</h3>
+              <p>Nghề làm gốm lu xuất phát từ những thợ gốm người Hoa ở Biên Hòa lập nên. Nửa cuối thế kỷ XIX (1875), nhiều lò gốm gia dụng ở Tân Vạn đã bắt đầu hình thành. Nguyên liệu chủ yếu là <strong>đất sét đỏ pha cát</strong>, nung ở nhiệt độ cao tạo cho xương sành dày, chắc và cứng. Quá trình tạo ra sản phẩm gốm lu còn mang tính thủ công cổ truyền, kỹ thuật chế tác chủ yếu bằng <strong>phương pháp dải cuộn</strong> và qua nhiều công đoạn.</p>
+              <p>Bên cạnh các lò gốm lu, nhiều cơ sở làm gốm mỹ nghệ hiện nay cũng được hình thành và phát triển khá mạnh. Đầu thế kỷ XX, nghề gốm đã phát triển ở Biên Hòa nhưng chủ yếu là sản phẩm gốm gia dụng như: nồi, lu, hũ, chậu, ghè, ấm, chén, đĩa… để sử dụng chứ chưa mang yếu tố trang trí mỹ thuật. Các lò sản xuất gốm mỹ nghệ thịnh hành kể từ khi <strong>trường Bá nghệ Biên Hòa</strong> được thành lập cách đây hàng thế kỷ. Hiện nay, sản phẩm gốm Biên Hòa được xuất khẩu ra đến nhiều quốc gia.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Đoạn tổng kết Làng nghề -->
+        <div class="craft-summary reveal">
+          <div class="craft-summary-icon" aria-hidden="true">🌿</div>
+          <div>
+            <h3>Sức sống hơn ba thế kỷ của làng nghề Biên Hòa – Đồng Nai</h3>
+            <p>Có thể nói vùng đất Biên Hòa - Đồng Nai từ lâu đã là vùng đất có nhiều tiềm năng phát triển kinh tế. Đất đai phì nhiêu, rộng lớn, nhiều mỏ quặng, nguyên liệu tự nhiên thuận tiện cho việc hình thành các ngành nghề thủ công truyền thống của cư dân đến Đồng Nai lập nghiệp, đã phục vụ và phát triển đời sống của người Đồng Nai suốt hơn ba thế kỷ qua. Dẫu có những thăng trầm trong quá trình phát triển nhưng một số làng nghề truyền thống đã khởi sắc, từng bước được đầu tư nâng cao công nghệ kỹ thuật, khẳng định một sức sống mới trên đất Biên Hòa - Đồng Nai nói riêng và Nam Bộ nói chung.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PHẦN 2: NGHỆ THUẬT CA HÁT
+         ========================================================= -->
+    <section class="section section-alt" id="ca-hat">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Phần II · Dòng chảy âm nhạc</span>
+          <h2>Nghệ thuật ca hát tiêu biểu của Đồng Nai</h2>
+          <p>Ca hát tiêu biểu của Đồng Nai nổi bật với các loại hình nghệ thuật truyền thống như <strong>đờn ca tài tử</strong>, <strong>hát múa dân gian dân tộc thiểu số</strong> cùng các <strong>ca khúc đương đại</strong> viết về quê hương, đất nước.</p>
+        </header>
+
+        <!-- Khối 1 & 2: Đờn ca tài tử + Dân ca các dân tộc thiểu số bản địa -->
+        <div class="music-feature-grid">
+          <!-- 1. Đờn ca tài tử -->
+          <article class="music-card reveal" data-art-id="don-ca-tai-tu">
+            <figure class="art-media music-media" style="--art-bg1:#0f5132; --art-bg2:#0284c7;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/don-ca-tai-tu.jpg hoặc đổi src bên dưới -->
+              <img src="images/don-ca-tai-tu.jpg" alt="Nghệ thuật Đờn ca tài tử tại Đồng Nai" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 260" role="img" aria-label="Minh họa tượng trưng Đờn ca tài tử">
+                <circle cx="385" cy="65" r="42" fill="rgba(254,240,138,0.28)"/>
+                <!-- Đờn kìm & sóng nước -->
+                <circle cx="175" cy="140" r="46" fill="#fde68a" stroke="#fff" stroke-width="3"/>
+                <circle cx="175" cy="140" r="10" fill="#78350f"/>
+                <rect x="218" y="133" width="145" height="14" rx="5" fill="#fef3c7"/>
+                <text x="320" y="95" fill="#fff" font-size="34" opacity="0.85">♪ ♫</text>
+                <path d="M60 208 Q150 192 240 208 T420 208" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="3"/>
+                <text x="240" y="242" text-anchor="middle" fill="#fff" font-size="13.5" font-weight="600">🪕 Minh họa: Đờn ca tài tử (thêm ảnh: images/don-ca-tai-tu.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">Di sản truyền thống</span>
+            </figure>
+            <div class="music-card-body">
+              <h3>1. Đờn ca tài tử &amp; sinh hoạt truyền thống</h3>
+              <p>Là loại hình diễn xướng âm nhạc dân gian đặc trưng Nam Bộ có sức sống bền bỉ trong cộng đồng cư dân ven sông Đồng Nai, các cù lao và vùng miệt vườn.</p>
+              <ul class="detail-list">
+                <li><strong>Nghệ nhân dân gian tiêu biểu:</strong> Gắn liền với tên tuổi các nghệ nhân tận tâm giữ lửa và truyền dạy như <strong>Phạm Văn Lơ</strong>, <strong>Lê Văn Lợi</strong>, <strong>Đặng Văn Vĩnh</strong>.</li>
+                <li><strong>Không gian diễn xướng:</strong> Từ các câu lạc bộ đờn ca tài tử địa phương, lễ hội đình chùa đến giao lưu văn hóa miệt vườn Tân Triều, Cù Lao Phố.</li>
+                <li><strong>Kết nối cộng đồng:</strong> Hòa nhịp cùng hát múa và văn hóa dân gian buôn làng của cộng đồng Chơro, Mạ tạo nên bức tranh di sản đa thanh sắc.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 2. Dân ca & Diễn xướng các dân tộc thiểu số bản địa -->
+          <article class="music-card reveal" data-art-id="dan-ca-dan-toc">
+            <figure class="art-media music-media" style="--art-bg1:#78350f; --art-bg2:#dc2626;">
+              <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/dan-ca-dan-toc.jpg hoặc đổi src bên dưới -->
+              <img src="images/dan-ca-dan-toc.jpg" alt="Dân ca và cồng chiêng các dân tộc bản địa Đồng Nai" loading="lazy" onerror="this.style.display='none'">
+              <svg class="art-placeholder-svg" viewBox="0 0 480 260" role="img" aria-label="Minh họa tượng trưng dân ca và cồng chiêng buôn làng">
+                <!-- Cồng chiêng đồng & đàn tre -->
+                <circle cx="185" cy="128" r="56" fill="#fbbf24" stroke="#fef3c7" stroke-width="4"/>
+                <circle cx="185" cy="128" r="18" fill="#d97706" stroke="#fffbeb" stroke-width="2.5"/>
+                <rect x="285" y="75" width="12" height="110" rx="5" fill="#fde68a"/>
+                <rect x="307" y="85" width="12" height="100" rx="5" fill="#fef08a"/>
+                <rect x="329" y="95" width="12" height="90" rx="5" fill="#fde68a"/>
+                <text x="365" y="105" fill="#fff" font-size="30" opacity="0.85">♬</text>
+                <text x="240" y="242" text-anchor="middle" fill="#fff" font-size="13.5" font-weight="600">🥁 Minh họa: Dân ca buôn làng (thêm ảnh: images/dan-ca-dan-toc.jpg)</text>
+              </svg>
+              <span class="art-slot-badge">Chơro · Mạ · S’tiêng · Kơ Ho</span>
+            </figure>
+            <div class="music-card-body">
+              <h3>2. Dân ca &amp; Diễn xướng các dân tộc thiểu số bản địa</h3>
+              <p>Đồng Nai là nơi quần cư lâu đời của các dân tộc <strong>Chơro, Mạ, S’tiêng, Kơ Ho</strong>, hình thành nên dòng chảy âm nhạc núi rừng đặc sắc, gắn chặt với tín ngưỡng nông nghiệp và sinh hoạt buôn làng:</p>
+              <ul class="detail-list">
+                <li><strong>Đặc trưng làn điệu &amp; Thể loại:</strong> Nếu dân ca của người Mạ thiên về sự tươi vui, rộn ràng thì dân ca người Chơro lại mang âm hưởng man mác, tự sự. Nội dung xoay quanh hát giao duyên, hát huê tình, hát mời rượu, đi rừng, rủ nhau đi cấy và hát nghi lễ trong hai đại lễ lớn là <strong>Sayangva</strong> (cúng Thần lúa) và <strong>Sayangbri</strong> (cúng Thần rừng).</li>
+                <li><strong>Nhạc cụ đệm hát:</strong> Tiếng hát luôn hòa quyện cùng bộ cồng chiêng đồng, đàn tre (<em>chinh k’la</em>), kèn môi và khèn bầu.</li>
+                <li><strong>Tác phẩm &amp; Nghệ nhân tiêu biểu:</strong> Các bài dân ca Chơro nổi tiếng như <em>Oh sing goh</em> (Nhớ cội nguồn), <em>Pantaorămseh</em> (Mời khách). Những nghệ nhân gạo cội như ông <strong>Nguyễn Văn Nổi</strong>, bà <strong>Ka Bào</strong> cùng công trình sưu tầm, ký âm của nhạc sĩ <strong>Trần Viết Bính</strong> (<em>51 bài dân ca Mạ – Chơro – S’tiêng ở Đồng Nai</em>) đã giúp bảo tồn nguyên vẹn kho tàng này cho thế hệ sau.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Khối 3: Tuyển tập ca khúc tiêu biểu viết về Đồng Nai -->
+        <div class="songs-block reveal" data-art-id="ca-khuc-dong-nai">
+          <div class="songs-header">
+            <div>
+              <span class="eyebrow">Giai điệu quê hương</span>
+              <h3>3. Tuyển tập ca khúc tiêu biểu viết về Đồng Nai</h3>
+              <p>Vùng đất Biên Hòa – Đồng Nai với bề dày lịch sử cách mạng (Chiến khu Đ, Rừng Sác) và nhịp sống công nghiệp năng động là nguồn cảm hứng cho nhiều thế hệ nhạc sĩ:</p>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="price-table songs-table">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Tên ca khúc</th>
+                  <th scope="col">Tác giả</th>
+                  <th scope="col">Nội dung &amp; Dấu ấn nghệ thuật</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Về Đồng Nai</strong></td>
+                  <td><span class="pill">Xuân Hồng</span></td>
+                  <td>Bản tình ca bất hủ mượn câu ca dao <em>“Nhà Bè nước chảy chia hai...”</em>, gợi nhắc Chiến khu Đ và dòng sông Đồng Nai.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Cồng vang đêm Chiến khu Đ</strong></td>
+                  <td><span class="pill">Nguyễn Khánh Hòa</span></td>
+                  <td>Khắc họa không gian sử thi hào hùng và âm vang núi rừng của vùng căn cứ cách mạng.</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Điện sáng về làng Chơro</strong></td>
+                  <td><span class="pill">Điểu Được</span></td>
+                  <td>Giải Nhất cuộc thi sáng tác về đề tài dân tộc thiểu số, mang đậm tiết tấu dân gian bản địa.</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Về Đồng Nai quê em</strong></td>
+                  <td><span class="pill">Nguyễn Đức Phước</span></td>
+                  <td>Giai điệu mộc mạc, gần gũi, ngợi ca vẻ đẹp bình dị của con người và cảnh sắc quê hương.</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>Đồng Nai ơi hát mãi bản tình ca</strong></td>
+                  <td><span class="pill">Bùi Xuân Hùng</span></td>
+                  <td>Mang âm hưởng trữ tình sâu lắng, ca ngợi sức sống và tình yêu vùng đất phương Nam.</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Về quê anh</strong></td>
+                  <td><span class="pill">Lệ Hằng</span></td>
+                  <td>Sáng tác của nữ nhạc sĩ đầu tiên của Đồng Nai được kết nạp Hội Nhạc sĩ Việt Nam (2018).</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>Lòng quê</strong></td>
+                  <td><span class="pill">Cao Hồng Sơn</span></td>
+                  <td>Giàu chất tự sự, đạt giải thưởng uy tín của Hội Nhạc sĩ Việt Nam.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Khối 4: Các giọng ca & Nhạc sĩ tiêu biểu gắn liền với Đồng Nai -->
+        <div class="artists-block reveal">
+          <div class="songs-header">
+            <div>
+              <span class="eyebrow">Gương mặt nghệ sĩ</span>
+              <h3>4. Các giọng ca &amp; Nhạc sĩ tiêu biểu gắn liền với Đồng Nai</h3>
+              <p>Những người nghệ sĩ đã làm rạng danh đời sống âm nhạc tỉnh nhà và ghi dấu ấn sâu đậm trong lòng khán thính giả cả nước.</p>
+            </div>
+          </div>
+
+          <div class="artists-grid">
+            <!-- Cột Nhạc sĩ -->
+            <div class="artist-column" data-art-id="nhac-si-dong-nai">
+              <figure class="art-media artist-banner" style="--art-bg1:#1e3a8a; --art-bg2:#0f766e;">
+                <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/nhac-si-dong-nai.jpg hoặc đổi src bên dưới -->
+                <img src="images/nhac-si-dong-nai.jpg" alt="Các nhạc sĩ tiêu biểu gắn với Đồng Nai" loading="lazy" onerror="this.style.display='none'">
+                <svg class="art-placeholder-svg" viewBox="0 0 480 210" role="img" aria-label="Minh họa lực lượng nhạc sĩ sáng tác Đồng Nai">
+                  <path d="M50 115 Q170 75 290 115 T440 105" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+                  <path d="M50 130 Q170 90 290 130 T440 120" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+                  <text x="240" y="112" text-anchor="middle" fill="#fde047" font-size="48">🎼</text>
+                  <text x="240" y="182" text-anchor="middle" fill="#fff" font-size="13.5" font-weight="600">🎼 Minh họa: Nhạc sĩ Đồng Nai (thêm ảnh: images/nhac-si-dong-nai.jpg)</text>
+                </svg>
+                <span class="art-slot-badge">Lực lượng sáng tác</span>
+              </figure>
+
+              <div class="artist-box-body">
+                <h4>🎼 Nhạc sĩ gắn với Đồng Nai</h4>
+                <p><strong>Hội Văn học Nghệ thuật Đồng Nai</strong> quy tụ nhiều tên tuổi có đóng góp lớn cho nền âm nhạc cả nước:</p>
+                <ul class="artist-list">
+                  <li>
+                    <strong>Cố nhạc sĩ Trần Viết Bính</strong>
+                    <span>Tác giả các ca khúc nổi tiếng <em>Hạt gạo làng ta</em>, <em>Gạc Ma – vọng mãi tên anh</em> và công trình sưu tầm dân ca dân tộc bản địa.</span>
+                  </li>
+                  <li>
+                    <strong>Nhạc sĩ Cao Hồng Sơn</strong>
+                    <span>Ghi dấu ấn với <em>Lòng quê</em>, <em>Những chàng trai của biển</em>, <em>Hát quốc ca giữa đảo Trường Sa</em>.</span>
+                  </li>
+                  <li>
+                    <strong>Nhạc sĩ Điểu Được</strong>
+                    <span>Người con dân tộc Chơro với tác phẩm tiêu biểu <em>Điện sáng về làng Chơro</em>.</span>
+                  </li>
+                  <li>
+                    <strong>Nhạc sĩ Nguyễn Khánh Hòa</strong>
+                    <span>Tác giả ca khúc hào sảng <em>Cồng vang đêm Chiến khu Đ</em>.</span>
+                  </li>
+                  <li>
+                    <strong>Nhạc sĩ Lệ Hằng</strong>
+                    <span>Tác giả ca khúc <em>Về quê anh</em> – nữ nhạc sĩ đầu tiên của Đồng Nai vào Hội Nhạc sĩ Việt Nam.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cột Ca sĩ -->
+            <div class="artist-column" data-art-id="ca-si-dong-nai">
+              <figure class="art-media artist-banner" style="--art-bg1:#581c87; --art-bg2:#be185d;">
+                <!-- THAY ẢNH TẠI ĐÂY: Đặt file images/ca-si-dong-nai.jpg hoặc đổi src bên dưới -->
+                <img src="images/ca-si-dong-nai.jpg" alt="Các ca sĩ nổi tiếng quê gốc Đồng Nai" loading="lazy" onerror="this.style.display='none'">
+                <svg class="art-placeholder-svg" viewBox="0 0 480 210" role="img" aria-label="Minh họa các giọng ca quê gốc Đồng Nai">
+                  <circle cx="240" cy="95" r="52" fill="rgba(255,255,255,0.12)"/>
+                  <text x="240" y="112" text-anchor="middle" fill="#fde047" font-size="48">🎤</text>
+                  <text x="240" y="182" text-anchor="middle" fill="#fff" font-size="13.5" font-weight="600">🎤 Minh họa: Giọng ca gốc Đồng Nai (thêm ảnh: images/ca-si-dong-nai.jpg)</text>
+                </svg>
+                <span class="art-slot-badge">Giọng ca nổi bật</span>
+              </figure>
+
+              <div class="artist-box-body">
+                <h4>🎤 Các ca sĩ nổi tiếng quê gốc Đồng Nai</h4>
+                <p>Nhiều giọng ca sinh ra và lớn lên tại Đồng Nai đã tỏa sáng ở nhiều dòng nhạc khác nhau:</p>
+                <ul class="artist-list">
+                  <li>
+                    <strong>Mạnh Quỳnh <small>(sinh tại Biên Hòa)</small></strong>
+                    <span>Một trong những giọng ca nam hàng đầu của dòng nhạc bolero, trữ tình quê hương và tân cổ giao duyên.</span>
+                  </li>
+                  <li>
+                    <strong>Quốc Thiên <small>(sinh tại Gia Kiệm, Thống Nhất)</small></strong>
+                    <span>Quán quân <em>Vietnam Idol 2008</em>, nổi bật với kỹ thuật thanh nhạc bài bản và chất giọng nam cao nội lực.</span>
+                  </li>
+                  <li>
+                    <strong>Khởi My <small>(sinh tại Long Khánh)</small></strong>
+                    <span>Nữ ca sĩ nhạc trẻ có sức ảnh hưởng lớn với khán giả trẻ, từng giành Quán quân <em>Gương mặt thân quen 2013</em>.</span>
+                  </li>
+                  <li>
+                    <strong>Song Luân <small>(sinh tại Biên Hòa)</small></strong>
+                    <span>Nghệ sĩ đa năng ghi dấu ấn ở cả lĩnh vực ca hát nhạc trẻ lẫn điện ảnh.</span>
+                  </li>
+                  <li>
+                    <strong>Nguyễn Ngọc Quế</strong>
+                    <span>Giọng ca tiêu biểu hoạt động sôi nổi tại tỉnh nhà, đồng thời là người đào tạo và truyền cảm hứng âm nhạc cho thanh thiếu niên Đồng Nai.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA CHUYỂN TRANG ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner green reveal">
+          <div>
+            <h2>Trải nghiệm văn hóa xong, lên lịch vi vu Đồng Nai!</h2>
+            <p>Ghé thăm Bửu Long, Tân Triều, rừng Mã Đà hoặc làm trắc nghiệm để nhận gợi ý điểm đến hợp gu.</p>
+          </div>
+          <div class="slide-actions">
+            <a href="goi-y.html" class="btn btn-accent">🧭 Làm trắc nghiệm gợi ý →</a>
+            <a href="index.html#diem-den" class="btn btn-ghost">Xem 12 điểm đến →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch, ẩm thực và văn hóa nghệ thuật Đồng Nai – vùng đất giàu truyền thống ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="goi-y.html#trac-nghiem">Trắc nghiệm sở thích</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế &amp; Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trung tâm Hỗ trợ & Trợ giúp Đồng Nai Xanh – tìm kiếm nhanh các chủ đề hot về lịch trình, vé tham quan, cắm trại, đặc sản, làng nghề và liên hệ hỗ trợ.">
+  <title>Trung tâm Hỗ trợ | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="index.html#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="index.html#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="index.html#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="dac-san.html#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="dac-san.html#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="nghe-thuat.html#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="nghe-thuat.html#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html" aria-current="page"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="index.html#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth" id="headerAuthBtn">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO TÌM KIẾM HỖ TRỢ ===== -->
+    <section class="help-hero">
+      <div class="container help-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ</a><span>/</span><span>Hỗ trợ &amp; Trợ giúp</span>
+        </nav>
+        <h1>Trung tâm Hỗ trợ Đồng Nai Xanh</h1>
+        <p>Chúng tôi có thể giúp gì cho hành trình khám phá Đồng Nai của bạn hôm nay?</p>
+
+        <!-- Thanh tìm kiếm chủ đề cần hỗ trợ -->
+        <div class="help-search-wrap" role="search">
+          <label for="helpSearchInput" class="skip-link">Tìm kiếm chủ đề cần hỗ trợ</label>
+          <span class="help-search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="helpSearchInput"
+            placeholder="Nhập từ khóa cần hỗ trợ (VD: vé Amazing Bay, đổi lịch trình, cắm trại Hồ Trị An, mua bưởi...)"
+            autocomplete="off"
+          >
+          <button type="button" class="help-search-clear" id="helpSearchClear" aria-label="Xóa từ khóa" hidden>×</button>
+        </div>
+
+        <!-- Các chủ đề HOT bấm tìm nhanh -->
+        <div class="hot-topics" aria-label="Chủ đề hot cần hỗ trợ">
+          <span class="hot-label">🔥 Chủ đề hot:</span>
+          <button type="button" class="hot-pill" data-query="tư vấn lịch trình">Đăng ký lịch trình</button>
+          <button type="button" class="hot-pill" data-query="đổi lịch">Đổi / hủy lịch hẹn</button>
+          <button type="button" class="hot-pill" data-query="giá vé">Giá vé tham quan</button>
+          <button type="button" class="hot-pill" data-query="cắm trại">Cắm trại Hồ Trị An</button>
+          <button type="button" class="hot-pill" data-query="di chuyển">Đường đi từ TP.HCM</button>
+          <button type="button" class="hot-pill" data-query="đặc sản">Mua quà đặc sản</button>
+          <button type="button" class="hot-pill" data-query="làng nghề">Tham quan làng nghề</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHỦ ĐỀ PHỔ BIẾN & LIÊN HỆ CHÚNG TÔI ===== -->
+    <section class="section" id="chu-de-pho-bien">
+      <div class="container help-container">
+        <!-- Bộ lọc nhóm chủ đề -->
+        <div class="help-cats" role="group" aria-label="Nhóm chủ đề hỗ trợ">
+          <button type="button" class="chip help-cat-chip active" data-cat="all">Tất cả chủ đề</button>
+          <button type="button" class="chip help-cat-chip" data-cat="tu-van">📋 Đặt lịch &amp; Tư vấn</button>
+          <button type="button" class="chip help-cat-chip" data-cat="ve-diem-den">🎟️ Vé &amp; Điểm đến</button>
+          <button type="button" class="chip help-cat-chip" data-cat="di-chuyen">⛺ Cắm trại &amp; Di chuyển</button>
+          <button type="button" class="chip help-cat-chip" data-cat="van-hoa-qua">🍐 Đặc sản &amp; Làng nghề</button>
+        </div>
+
+        <div class="help-popular-head">
+          <h2>Chủ đề phổ biến</h2>
+          <span class="help-count" id="helpResultCount" aria-live="polite"></span>
+        </div>
+
+        <!-- Danh sách câu hỏi phổ biến theo mẫu Help Center -->
+        <div class="help-list" id="helpTopicList">
+          <!-- 1 -->
+          <article class="help-item" data-cat="tu-van">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Điều gì xảy ra sau khi tôi đăng ký nhận tư vấn lịch trình trên Đồng Nai Xanh? <span class="hot-mini">HOT</span></span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Ngay sau khi bạn gửi biểu mẫu tại mục <a href="index.html#lien-he">Đăng ký tư vấn lịch trình</a>, đội ngũ hỗ trợ của Đồng Nai Xanh sẽ tiếp nhận yêu cầu và phản hồi trong vòng <strong>2 – 4 giờ làm việc</strong> (khung giờ 8:00 – 21:00 hằng ngày) qua số điện thoại hoặc email bạn đã cung cấp.</p>
+                <ul>
+                  <li>Gợi ý lịch trình chi tiết theo đúng số lượng thành viên và ngày khởi hành dự kiến.</li>
+                  <li>Báo mức chi phí tham khảo minh bạch (vé cổng, thuê lều, ăn uống đặc sản).</li>
+                  <li>Cập nhật tình hình thời tiết, mùa trái cây hoặc lưu ý an toàn tại điểm đến bạn chọn.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="help-item" data-cat="ve-diem-den">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Mua vé tham quan trực tiếp để đảm bảo an toàn và tránh vé giả <span class="hot-mini">HOT</span></span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Để đảm bảo quyền lợi tối đa khi ghé thăm các khu du lịch lớn tại Đồng Nai như <strong>The Amazing Bay</strong>, <strong>Khu du lịch Bửu Long</strong>, <strong>Tre Việt</strong> hay bến tàu <strong>Đảo Ó</strong>, bạn nên mua vé trực tiếp tại quầy vé chính thức ở cổng khu du lịch hoặc kênh trực tuyến chính chủ của đơn vị vận hành.</p>
+                <ul>
+                  <li><strong>The Amazing Bay:</strong> Vé tham khảo 350.000đ (trẻ em) – 450.000đ (người lớn), mua trực tiếp tại quầy cổng 22 Võ Thị Sáu, Biên Hòa.</li>
+                  <li><strong>Đảo Ó – Hồ Trị An:</strong> Mua vé tàu khứ hồi và phí lên đảo trực tiếp tại bến tàu xã Vĩnh An (khoảng 150.000 – 300.000đ/người).</li>
+                  <li>Tuyệt đối không chuyển khoản đặt cọc qua các trang mạng xã hội không rõ nguồn gốc mạo danh khu du lịch.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="help-item" data-cat="tu-van">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Cách thay đổi ngày khởi hành hoặc điều chỉnh lịch trình đã đăng ký tư vấn</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Nếu kế hoạch của nhóm bạn thay đổi do thời tiết hoặc công việc cá nhân, bạn hoàn toàn có thể cập nhật lại lịch trình miễn phí theo 2 cách:</p>
+                <ul>
+                  <li><strong>Cách 1:</strong> Phản hồi trực tiếp qua email xác nhận từ <code>lienhe@dongnaixanh.vn</code> hoặc gọi hotline <strong>0900 000 000</strong>.</li>
+                  <li><strong>Cách 2:</strong> Gửi lại biểu mẫu tại mục <a href="index.html#lien-he">Liên hệ</a> kèm ghi chú <em>“Đổi ngày khởi hành”</em> ở ô Lời nhắn để tư vấn viên điều chỉnh gợi ý phù hợp theo mùa.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="help-item" data-cat="tu-van">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Tôi có thể thay đổi số lượng thành viên hoặc đổi sang điểm đến khác không?</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p><strong>Hoàn toàn được!</strong> Dịch vụ tư vấn thông tin trên Đồng Nai Xanh là hoàn toàn miễn phí. Bạn có thể thay đổi số người (từ đi cá nhân, cặp đôi đến đoàn 50 người) hoặc đổi điểm đến bất cứ lúc nào.</p>
+                <p>💡 <em>Mẹo nhỏ:</em> Nếu nhóm bạn còn phân vân giữa các sở thích khác nhau, hãy thử làm bài <a href="goi-y.html">Trắc nghiệm Gợi ý 10 câu</a> để tìm điểm chung hợp gu cả nhóm trước nhé!</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="help-item" data-cat="tu-van">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Cách hủy yêu cầu tư vấn và chính sách bảo mật thông tin cá nhân</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Khi không còn nhu cầu nhận tư vấn lịch trình, bạn chỉ cần nhắn tin hoặc báo qua hotline/email để chúng tôi đóng yêu cầu hỗ trợ mà không phát sinh bất kỳ khoản phí nào.</p>
+                <p>Thông tin họ tên, số điện thoại và email của bạn chỉ được sử dụng duy nhất cho việc liên hệ tư vấn chuyến đi theo sự đồng ý của bạn trên biểu mẫu.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="help-item" data-cat="ve-diem-den">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Làm cách nào để tra cứu chi phí tham quan và bảng giá đặc sản Đồng Nai?</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Bạn có thể tra cứu nhanh toàn bộ mức giá tham khảo ngay trên website mà không cần đăng nhập:</p>
+                <ul>
+                  <li><strong>Chi phí vé điểm đến:</strong> Xem trên từng thẻ địa điểm hoặc mục <em>Chi phí tham quan</em> tại trang <a href="index.html#diem-den">Du lịch Đồng Nai</a> (từ miễn phí ở Thác Đá Hàn, 50.000đ ở Vườn trái cây Long Khánh đến 350.000 – 450.000đ ở The Amazing Bay).</li>
+                  <li><strong>Giá món ăn &amp; quà mua về:</strong> Xem bảng tổng hợp 16 món tại mục <a href="dac-san.html#bang-gia">Bảng giá đặc sản Đồng Nai</a> (có thể sắp xếp Giá Thấp → Cao).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="help-item" data-cat="di-chuyen">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Cần chuẩn bị gì và lưu ý an toàn ra sao khi cắm trại Hồ Trị An, Rừng Mã Đà, Thác Mai? <span class="hot-mini">HOT</span></span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Các điểm sinh thái tự nhiên tại Vĩnh Cửu và Định Quán rất đẹp nhưng ít dịch vụ thương mại sẵn có, bạn nên lưu ý:</p>
+                <ul>
+                  <li>Kiểm tra kỹ dự báo thời tiết trước 2 – 3 ngày; hạn chế cắm trại sát mép nước hoặc tắm thác khi trời mưa lớn.</li>
+                  <li>Chuẩn bị lều chống thấm, đèn pin, thuốc xịt côn trùng, áo khoác mỏng ban đêm và túi gom rác bảo vệ rừng – hồ.</li>
+                  <li>Nếu không có sẵn đồ nghề, bạn có thể thuê trọn gói lều, bếp nướng BBQ và SUP tại các bãi cắm trại quanh Hồ Trị An (50.000 – 150.000đ/người).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="help-item" data-cat="di-chuyen">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Hướng dẫn di chuyển từ TP.HCM đến các điểm du lịch Đồng Nai thuận tiện nhất</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <ul>
+                  <li><strong>Các điểm gần (15 – 35 km):</strong> Khu du lịch Tre Việt (qua phà Cát Lái), Bửu Long, Làng Bưởi Tân Triều, The Amazing Bay – đi xe máy, ô tô cá nhân hoặc xe buýt từ trung tâm TP.HCM chỉ mất 40 – 60 phút.</li>
+                  <li><strong>Cung đường 70 – 90 km:</strong> Hồ Trị An, Rừng Mã Đà, Thác Đá Hàn, Vườn trái cây Long Khánh – đi theo Quốc lộ 1A hoặc cao tốc TP.HCM – Long Thành – Dầu Giây (với ô tô) rất nhanh và êm.</li>
+                  <li><strong>Cung phượt xa (~100 – 130 km):</strong> Núi Chứa Chan (Xuân Lộc), Đá Ba Chồng, Thác Mai (Định Quán) – nên xuất phát sớm từ 5:30 – 6:00 sáng để có trọn vẹn thời gian vui chơi.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="help-item" data-cat="van-hoa-qua">
+            <button type="button" class="help-item-btn" aria-expanded="false">
+              <span class="help-q-text">Kinh nghiệm chọn mua đặc sản và kết hợp tham quan các làng nghề truyền thống</span>
+              <span class="help-chevron" aria-hidden="true">›</span>
+            </button>
+            <div class="help-answer" hidden>
+              <div class="help-answer-inner">
+                <p>Để chuyến đi thêm chiều sâu văn hóa và mua được quà chuẩn gốc Đồng Nai:</p>
+                <ul>
+                  <li><strong>Mua quà tận gốc:</strong> Mua bưởi đường lá cam, rượu bưởi ngay tại <a href="index.html?item=lang-buoi-tan-trieu#diem-den">Làng Bưởi Tân Triều</a>; chôm chôm, mít tố nữ tại nhà vườn Long Khánh (rộ nhất tháng 7 – 8); bánh gai tại phường Hố Nai.</li>
+                  <li><strong>Ghé thăm làng nghề:</strong> Kết hợp tham quan danh thắng Bửu Long với <em>làng đá Bửu Long</em> &amp; <em>lò gốm Tân Vạn</em>; đi Vĩnh Cửu tìm hiểu <em>nghề nấu đường mía Bình Lợi</em>; đi Tân Phú khám phá <em>thổ cẩm người Mạ ở Tà Lài</em> (xem chi tiết tại trang <a href="nghe-thuat.html">Nghệ thuật</a>).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Trạng thái không tìm thấy kết quả -->
+        <div class="empty-state" id="helpEmptyState" hidden>
+          <span aria-hidden="true">🔎</span>
+          Không tìm thấy chủ đề khớp với từ khóa của bạn. Hãy thử từ khóa khác hoặc liên hệ trực tiếp với chúng tôi bên dưới nhé!
+        </div>
+
+        <!-- ===== LIÊN HỆ CHÚNG TÔI (theo mẫu Help Center) ===== -->
+        <div class="help-contact-block" id="lien-he-chung-toi">
+          <h3>Liên hệ chúng tôi</h3>
+          <p>Kết nối với đội ngũ Hỗ trợ Khách hàng của chúng tôi bằng cách quét mã QR bên dưới hoặc gửi yêu cầu tư vấn trực tiếp</p>
+
+          <div class="help-contact-grid">
+            <div class="help-qr-box">
+              <!-- THAY ẢNH QR TẠI ĐÂY: đặt file images/qr-ho-tro.png để thay mã QR thật của nhóm bạn -->
+              <img src="images/qr-ho-tro.png" alt="Mã QR kết nối hỗ trợ Đồng Nai Xanh" loading="lazy" onerror="this.style.display='none'">
+              <svg class="help-qr-svg" viewBox="0 0 140 140" role="img" aria-label="Mã QR hỗ trợ khách hàng">
+                <rect width="140" height="140" rx="12" fill="#ffffff"/>
+                <!-- 3 góc định vị QR -->
+                <rect x="14" y="14" width="34" height="34" rx="5" fill="none" stroke="#145c39" stroke-width="6"/>
+                <rect x="24" y="24" width="14" height="14" rx="2" fill="#145c39"/>
+                <rect x="92" y="14" width="34" height="34" rx="5" fill="none" stroke="#145c39" stroke-width="6"/>
+                <rect x="102" y="24" width="14" height="14" rx="2" fill="#145c39"/>
+                <rect x="14" y="92" width="34" height="34" rx="5" fill="none" stroke="#145c39" stroke-width="6"/>
+                <rect x="24" y="102" width="14" height="14" rx="2" fill="#145c39"/>
+                <!-- Các ô dữ liệu tượng trưng -->
+                <rect x="58" y="16" width="8" height="8" fill="#1f7a4d"/>
+                <rect x="72" y="16" width="8" height="18" fill="#1f7a4d"/>
+                <rect x="58" y="32" width="8" height="14" fill="#1f7a4d"/>
+                <rect x="16" y="58" width="16" height="8" fill="#1f7a4d"/>
+                <rect x="40" y="58" width="12" height="12" fill="#1f7a4d"/>
+                <rect x="60" y="56" width="20" height="20" rx="4" fill="#f59e0b"/>
+                <rect x="88" y="58" width="14" height="8" fill="#1f7a4d"/>
+                <rect x="110" y="58" width="16" height="14" fill="#1f7a4d"/>
+                <rect x="58" y="86" width="10" height="16" fill="#1f7a4d"/>
+                <rect x="76" y="86" width="18" height="8" fill="#1f7a4d"/>
+                <rect x="102" y="86" width="24" height="8" fill="#1f7a4d"/>
+                <rect x="74" y="102" width="12" height="24" fill="#1f7a4d"/>
+                <rect x="94" y="102" width="14" height="10" fill="#1f7a4d"/>
+                <rect x="114" y="108" width="12" height="18" fill="#1f7a4d"/>
+              </svg>
+              <span>Quét QR hỗ trợ nhanh</span>
+            </div>
+
+            <div class="help-direct-info">
+              <ul>
+                <li><strong>📞 Tổng đài tư vấn:</strong> 0900 000 000 (8:00 – 21:00 mỗi ngày)</li>
+                <li><strong>✉️ Email hỗ trợ:</strong> lienhe@dongnaixanh.vn</li>
+                <li><strong>📍 Văn phòng thông tin:</strong> TP. Biên Hòa, tỉnh Đồng Nai</li>
+              </ul>
+              <div class="help-contact-actions">
+                <a href="index.html#lien-he" class="btn-help-contact">Liên hệ chúng tôi</a>
+                <a href="goi-y.html" class="btn btn-outline">🧭 Trắc nghiệm gợi ý</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch, ẩm thực và văn hóa nghệ thuật Đồng Nai – vùng đất xanh mát, hiền hòa ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế &amp; Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trắc nghiệm 4 lựa chọn khám phá sở thích cá nhân để nhận gợi ý địa điểm du lịch và món ăn đặc sản phù hợp nhất tại Đồng Nai.">
+  <title>Gợi ý | Đồng Nai Xanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Đồng Nai Xanh - Trang chủ">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span>Đồng Nai <em>Xanh</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dulich">Du lịch <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dulich">
+              <li><a href="index.html"><span aria-hidden="true">🏞️</span> Tổng quan du lịch</a></li>
+              <li><a href="index.html#diem-den"><span aria-hidden="true">📍</span> Điểm đến</a></li>
+              <li><a href="index.html#ban-do"><span aria-hidden="true">🗺️</span> Bản đồ du lịch</a></li>
+              <li><a href="index.html#kinh-nghiem"><span aria-hidden="true">🧭</span> Kinh nghiệm</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-dacsan">Đặc sản <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-dacsan">
+              <li><a href="dac-san.html"><span aria-hidden="true">🍲</span> Tổng quan đặc sản</a></li>
+              <li><a href="dac-san.html#mon-ngon"><span aria-hidden="true">🥢</span> Món ngon</a></li>
+              <li><a href="dac-san.html#bang-gia"><span aria-hidden="true">💰</span> Bảng giá</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-nghethuat">Nghệ thuật <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-nghethuat">
+              <li><a href="nghe-thuat.html"><span aria-hidden="true">🎨</span> Tổng quan nghệ thuật</a></li>
+              <li><a href="nghe-thuat.html#lang-nghe"><span aria-hidden="true">🏺</span> Làng nghề truyền thống</a></li>
+              <li><a href="nghe-thuat.html#ca-hat"><span aria-hidden="true">🎶</span> Nghệ thuật ca hát</a></li>
+            </ul>
+          </li>
+          <li><a href="goi-y.html" class="active" aria-current="page">Gợi ý</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-hotro">Hỗ trợ <span class="caret" aria-hidden="true">▾</span></button>
+            <ul class="dropdown" id="dd-hotro">
+              <li><a href="ho-tro.html"><span class="help-circle-icon" aria-hidden="true">?</span> Trợ giúp</a></li>
+              <li><a href="ho-tro.html#chu-de-pho-bien"><span aria-hidden="true">🔥</span> Chủ đề phổ biến</a></li>
+              <li><a href="index.html#lien-he"><span aria-hidden="true">📞</span> Liên hệ tư vấn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="dang-nhap.html" class="btn-auth" id="headerAuthBtn">
+          <span aria-hidden="true">👤</span>
+          <span class="auth-label">Đăng nhập<span class="auth-extra"> / Đăng ký</span></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero quiz-hero" style="background-image: url('images/rung-ma-da.jpg'), linear-gradient(135deg, #0b3d26, #0f766e);">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ</a><span>/</span><span>Gợi ý</span>
+        </nav>
+        <span class="slide-tag">🧭 Trắc nghiệm sở thích cá nhân</span>
+        <h1>Gợi ý điểm đến, món ngon &amp; nghệ thuật hợp gu</h1>
+        <p>Trả lời 10 câu hỏi trắc nghiệm 4 lựa chọn về du lịch, ẩm thực và văn hóa nghệ thuật để khám phá địa điểm, món ngon cùng làng nghề – giai điệu Đồng Nai dành riêng cho bạn.</p>
+        <a href="#trac-nghiem" class="btn btn-accent">Làm trắc nghiệm ngay ↓</a>
+      </div>
+    </section>
+
+    <!-- ===== THỐNG KÊ ===== -->
+    <section class="stats" aria-label="Con số nổi bật">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-number" data-count="10">0</span><span class="stat-label">Câu hỏi 4 lựa chọn</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="12">0</span><span class="stat-label">Điểm đến du lịch</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="16">0</span><span class="stat-label">Món ăn &amp; đặc sản</span></div>
+        <div class="stat reveal"><span class="stat-number" data-count="12">0</span><span class="stat-label">Làng nghề &amp; nét đẹp ca hát</span></div>
+      </div>
+    </section>
+
+    <!-- ===== TRẮC NGHIỆM 4 LỰA CHỌN ===== -->
+    <section class="section" id="trac-nghiem">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Gợi ý cá nhân hóa</span>
+          <h2>Bạn thuộc tuýp du khách nào khi đến Đồng Nai?</h2>
+          <p>10 câu hỏi xoay quanh trải nghiệm du lịch, khẩu vị ăn uống và gu thưởng thức làng nghề – âm nhạc. Hãy chọn đáp án A, B, C hoặc D phù hợp nhất với bạn.</p>
+        </header>
+
+        <div class="quiz-box reveal" id="quizApp">
+          <div class="quiz-top">
+            <div class="quiz-progress-meta">
+              <span class="quiz-step-badge" id="quizStepLabel">Câu 1 / 10</span>
+              <span class="quiz-topic" id="quizTopic">🏞️ Hoạt động yêu thích</span>
+            </div>
+            <span class="quiz-answered" id="quizAnsweredCount">Đã trả lời: 0/10</span>
+          </div>
+
+          <div class="quiz-progress" role="progressbar" aria-label="Tiến độ trắc nghiệm" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" id="quizProgressWrap">
+            <div class="quiz-progress-bar" id="quizProgressBar" style="width: 10%;"></div>
+          </div>
+
+          <div class="quiz-step-dots" id="quizStepDots" role="tablist" aria-label="Chuyển câu hỏi"></div>
+
+          <div class="quiz-stage" id="quizStage" aria-live="polite">
+            <h3 class="quiz-question" id="quizQuestion">Đang tải câu hỏi...</h3>
+            <div class="quiz-options" id="quizOptions" role="radiogroup" aria-labelledby="quizQuestion"></div>
+          </div>
+
+          <div class="quiz-actions">
+            <button type="button" class="btn btn-outline" id="prevQuestionBtn" disabled>← Câu trước</button>
+            <div class="quiz-actions-right">
+              <button type="button" class="btn btn-reset-quiz" id="resetQuizBtn">Làm mới</button>
+              <button type="button" class="btn btn-primary" id="nextQuestionBtn">Câu tiếp theo →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KẾT QUẢ GỢI Ý ===== -->
+    <section class="section section-alt" id="ket-qua" hidden>
+      <div class="container">
+        <!-- Chân dung sở thích -->
+        <div class="persona-card" id="personaCard">
+          <div class="persona-main">
+            <span class="persona-tag">✨ Kết quả phân tích sở thích</span>
+            <div class="persona-heading">
+              <span class="persona-icon" id="personaIcon" aria-hidden="true">🏕️</span>
+              <div>
+                <h2 id="personaTitle">Nhà Thám Hiểm Xanh</h2>
+                <p class="persona-sub" id="personaSubtitle">Yêu thiên nhiên nguyên sơ &amp; trải nghiệm dân dã</p>
+              </div>
+            </div>
+            <p class="persona-desc" id="personaDesc"></p>
+            <div class="persona-actions">
+              <button type="button" class="btn btn-accent" id="retakeQuizBtn">🔄 Làm lại trắc nghiệm</button>
+              <button type="button" class="btn btn-ghost" id="copyResultBtn">📋 Sao chép gợi ý</button>
+            </div>
+          </div>
+
+          <div class="persona-bars" aria-label="Mức độ phù hợp theo nhóm sở thích">
+            <h3>Mức độ hợp gu của bạn</h3>
+            <div id="traitBars" class="trait-list"></div>
+          </div>
+        </div>
+
+        <!-- Gợi ý Địa điểm du lịch -->
+        <div class="rec-block">
+          <div class="rec-head">
+            <div>
+              <span class="eyebrow">Điểm đến phù hợp</span>
+              <h2>3 địa điểm du lịch gợi ý cho bạn</h2>
+              <p>Được chọn lọc trực tiếp từ 12 điểm đến tiêu biểu của Đồng Nai Xanh dựa trên câu trả lời của bạn.</p>
+            </div>
+            <a href="index.html#diem-den" class="btn btn-outline">Xem cả 12 điểm đến →</a>
+          </div>
+          <div class="card-grid quiz-results" id="recDestGrid"></div>
+        </div>
+
+        <!-- Gợi ý Món ăn & Đặc sản -->
+        <div class="rec-block">
+          <div class="rec-head">
+            <div>
+              <span class="eyebrow">Ẩm thực hợp khẩu vị</span>
+              <h2>3 món ăn &amp; đặc sản bạn nhất định nên thử</h2>
+              <p>Kết hợp món ngon thưởng thức tại chỗ và quà đặc sản mang về khớp với khẩu vị &amp; lộ trình của bạn.</p>
+            </div>
+            <a href="dac-san.html#mon-ngon" class="btn btn-outline">Xem cả 16 đặc sản →</a>
+          </div>
+          <div class="card-grid quiz-results" id="recFoodGrid"></div>
+        </div>
+
+        <!-- Gợi ý Nghệ thuật (Làng nghề & Ca hát) -->
+        <div class="rec-block">
+          <div class="rec-head">
+            <div>
+              <span class="eyebrow">Văn hóa – Nghệ thuật hợp tâm hồn</span>
+              <h2>3 nét đẹp làng nghề &amp; ca hát gợi ý cho bạn</h2>
+              <p>Gợi ý trực tiếp từ các làng nghề thủ công hơn ba thế kỷ và dòng chảy ca hát đặc sắc trên trang Nghệ thuật.</p>
+            </div>
+            <a href="nghe-thuat.html" class="btn btn-outline">Xem trang Nghệ thuật →</a>
+          </div>
+          <div class="card-grid quiz-results" id="recArtGrid"></div>
+        </div>
+
+        <!-- Gợi ý Lịch trình kết hợp -->
+        <div class="itinerary-card" id="itineraryCard">
+          <div class="itinerary-content">
+            <span class="eyebrow">Lịch trình gợi ý nhanh</span>
+            <h3 id="itineraryTitle">Gợi ý kết hợp đi chơi, ăn uống &amp; thưởng thức nghệ thuật</h3>
+            <ul class="itinerary-steps" id="itinerarySteps"></ul>
+          </div>
+          <div class="itinerary-cta">
+            <p>Bạn muốn nhận tư vấn chi tiết cho nhóm của mình theo gợi ý này?</p>
+            <a href="index.html#lien-he" class="btn btn-primary" id="consultRecBtn">Đăng ký tư vấn điểm đến này →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA KHÁM PHÁ TOÀN BỘ ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner green reveal">
+          <div>
+            <h2>Muốn tự mình khám phá toàn bộ cẩm nang?</h2>
+            <p>Xem trọn bộ 12 địa điểm du lịch, 16 đặc sản và kho tàng làng nghề – ca hát Đồng Nai.</p>
+          </div>
+          <div class="slide-actions">
+            <a href="index.html#diem-den" class="btn btn-accent">12 Điểm du lịch →</a>
+            <a href="dac-san.html#mon-ngon" class="btn btn-ghost">16 Đặc sản →</a>
+            <a href="nghe-thuat.html" class="btn btn-ghost">🎨 Nghệ thuật →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">🌿</span><span>Đồng Nai Xanh</span></a>
+          <p>Website giới thiệu du lịch và ẩm thực Đồng Nai – vùng đất xanh mát, hiền hòa ngay cạnh TP.HCM.</p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html#diem-den">Điểm đến</a></li>
+            <li><a href="index.html#kinh-nghiem">Kinh nghiệm</a></li>
+            <li><a href="dac-san.html">Đặc sản</a></li>
+            <li><a href="nghe-thuat.html">Nghệ thuật</a></li>
+            <li><a href="goi-y.html">Gợi ý</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="ho-tro.html">Trung tâm Trợ giúp</a></li>
+            <li><a href="goi-y.html#trac-nghiem">Trắc nghiệm sở thích</a></li>
+            <li><a href="index.html#lien-he">Liên hệ tư vấn</a></li>
+            <li><a href="dac-san.html#bang-gia">Bảng giá đặc sản</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span class="year"></span> Đồng Nai Xanh. Bài tập nhóm – Thiết kế &amp; Lập trình Web căn bản.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL CHI TIẾT ===== -->
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" aria-label="Đóng">×</button>
+      <div class="card-media modal-media"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <ul class="card-meta" id="modalMeta"></ul>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
